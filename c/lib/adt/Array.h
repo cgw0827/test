@@ -7,28 +7,28 @@ typedef struct
 	int size;
 	int *value;
 	/* data */
-}ARRAY_1D;
+}Array1D;
 typedef struct 
 {
 	int size;
-	ARRAY_1D **value;
-}ARRAY_2D;
+	Array1D **value;
+}Array2D;
 
 typedef struct 
 {
 	int size;
-	ARRAY_2D **value;
+	Array2D **value;
 	/* data */
-}ARRAY_3D;
+}Array3D;
 
-ARRAY_1D* get1DArray(int len);
-void free1DArray(ARRAY_1D* array);
+Array1D* getArray1D(int len);
+void freeArray1D(Array1D* array);
 
-ARRAY_2D*  get2DArray(int len,int len2);
-void free2DArray(ARRAY_2D *array);
+Array2D*  getArray2D(int len,int len2);
+void freeArray2D(Array2D *array);
 
-ARRAY_3D*  get3DArray(int len,int len2,int len3);
+Array3D*  getArray3D(int len,int len2,int len3);
 
-void free3DArray(ARRAY_3D* array);
+void freeArray3D(Array3D* array);
 
 #endif

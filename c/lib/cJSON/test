@@ -1,0 +1,868 @@
+	.section	__TEXT,__text,regular,pure_instructions
+	.macosx_version_min 10, 12
+	.globl	_doit
+	.align	4, 0x90
+_doit:                                  ## @doit
+	.cfi_startproc
+## BB#0:
+	pushq	%rbp
+Ltmp0:
+	.cfi_def_cfa_offset 16
+Ltmp1:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+Ltmp2:
+	.cfi_def_cfa_register %rbp
+	subq	$32, %rsp
+	movq	%rdi, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	callq	_cJSON_Parse
+	movq	%rax, -24(%rbp)
+	cmpq	$0, -24(%rbp)
+	jne	LBB0_2
+## BB#1:
+	callq	_cJSON_GetErrorPtr
+	leaq	L_.str(%rip), %rdi
+	movq	%rax, %rsi
+	movb	$0, %al
+	callq	_printf
+	movl	%eax, -28(%rbp)         ## 4-byte Spill
+	jmp	LBB0_3
+LBB0_2:
+	movq	-24(%rbp), %rdi
+	callq	_cJSON_Print
+	movq	%rax, -16(%rbp)
+	movq	-24(%rbp), %rdi
+	callq	_cJSON_Delete
+	leaq	L_.str.1(%rip), %rdi
+	movq	-16(%rbp), %rsi
+	movb	$0, %al
+	callq	_printf
+	movq	-16(%rbp), %rdi
+	movl	%eax, -32(%rbp)         ## 4-byte Spill
+	callq	_free
+LBB0_3:
+	addq	$32, %rsp
+	popq	%rbp
+	retq
+	.cfi_endproc
+
+	.globl	_dofile
+	.align	4, 0x90
+_dofile:                                ## @dofile
+	.cfi_startproc
+## BB#0:
+	pushq	%rbp
+Ltmp3:
+	.cfi_def_cfa_offset 16
+Ltmp4:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+Ltmp5:
+	.cfi_def_cfa_register %rbp
+	subq	$64, %rsp
+	leaq	L_.str.2(%rip), %rsi
+	movq	%rdi, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	callq	_fopen
+	xorl	%ecx, %ecx
+	movl	%ecx, %esi
+	movl	$2, %edx
+	movq	%rax, -16(%rbp)
+	movq	-16(%rbp), %rdi
+	callq	_fseek
+	movq	-16(%rbp), %rdi
+	movl	%eax, -36(%rbp)         ## 4-byte Spill
+	callq	_ftell
+	xorl	%ecx, %ecx
+	movl	%ecx, %esi
+	xorl	%edx, %edx
+	movq	%rax, -24(%rbp)
+	movq	-16(%rbp), %rdi
+	callq	_fseek
+	movq	-24(%rbp), %rsi
+	addq	$1, %rsi
+	movq	%rsi, %rdi
+	movl	%eax, -40(%rbp)         ## 4-byte Spill
+	callq	_malloc
+	movl	$1, %ecx
+	movl	%ecx, %esi
+	movq	%rax, -32(%rbp)
+	movq	-32(%rbp), %rdi
+	movq	-24(%rbp), %rdx
+	movq	-16(%rbp), %rcx
+	callq	_fread
+	movq	-16(%rbp), %rdi
+	movq	%rax, -48(%rbp)         ## 8-byte Spill
+	callq	_fclose
+	movq	-32(%rbp), %rdi
+	movl	%eax, -52(%rbp)         ## 4-byte Spill
+	callq	_doit
+	movq	-32(%rbp), %rdi
+	callq	_free
+	addq	$64, %rsp
+	popq	%rbp
+	retq
+	.cfi_endproc
+
+	.section	__TEXT,__literal8,8byte_literals
+	.align	3
+LCPI2_0:
+	.quad	4627448617123184640     ## double 24
+LCPI2_1:
+	.quad	4652464705678344192     ## double 1080
+LCPI2_2:
+	.quad	4656159064747671552     ## double 1920
+LCPI2_3:
+	.quad	4638496509959077888     ## double 125
+LCPI2_4:
+	.quad	4648488871632306176     ## double 600
+LCPI2_5:
+	.quad	4650248090236747776     ## double 800
+	.section	__TEXT,__text,regular,pure_instructions
+	.globl	_create_objects
+	.align	4, 0x90
+_create_objects:                        ## @create_objects
+	.cfi_startproc
+## BB#0:
+	pushq	%rbp
+Ltmp6:
+	.cfi_def_cfa_offset 16
+Ltmp7:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+Ltmp8:
+	.cfi_def_cfa_register %rbp
+	pushq	%r14
+	pushq	%rbx
+	subq	$608, %rsp              ## imm = 0x260
+Ltmp9:
+	.cfi_offset %rbx, -32
+Ltmp10:
+	.cfi_offset %r14, -24
+	leaq	l_create_objects.fields(%rip), %rax
+	movl	$128, %ecx
+	movl	%ecx, %edx
+	leaq	-272(%rbp), %rsi
+	xorl	%ecx, %ecx
+	movl	$36, %edi
+	movl	%edi, %r8d
+	leaq	-128(%rbp), %r9
+	leaq	l_create_objects.strings(%rip), %r10
+	movl	$56, %edi
+	movl	%edi, %r11d
+	leaq	-80(%rbp), %rbx
+	movq	___stack_chk_guard@GOTPCREL(%rip), %r14
+	movq	(%r14), %r14
+	movq	%r14, -24(%rbp)
+	movq	%rbx, %rdi
+	movq	%rsi, -336(%rbp)        ## 8-byte Spill
+	movq	%r10, %rsi
+	movq	%rdx, -344(%rbp)        ## 8-byte Spill
+	movq	%r11, %rdx
+	movq	%rax, -352(%rbp)        ## 8-byte Spill
+	movq	%r8, -360(%rbp)         ## 8-byte Spill
+	movq	%r9, -368(%rbp)         ## 8-byte Spill
+	movl	%ecx, -372(%rbp)        ## 4-byte Spill
+	callq	_memcpy
+	movq	-368(%rbp), %rax        ## 8-byte Reload
+	movq	%rax, %rdi
+	movl	-372(%rbp), %esi        ## 4-byte Reload
+	movq	-360(%rbp), %rdx        ## 8-byte Reload
+	callq	_memset
+	movl	$-1, -124(%rbp)
+	movl	$1, -116(%rbp)
+	movl	$1, -96(%rbp)
+	movq	L_create_objects.ids(%rip), %rax
+	movq	%rax, -144(%rbp)
+	movq	L_create_objects.ids+8(%rip), %rax
+	movq	%rax, -136(%rbp)
+	movq	-336(%rbp), %rax        ## 8-byte Reload
+	movq	%rax, %rdi
+	movq	-352(%rbp), %rsi        ## 8-byte Reload
+	movq	-344(%rbp), %rdx        ## 8-byte Reload
+	callq	_memcpy
+	callq	_cJSON_CreateObject
+	leaq	L_.str.19(%rip), %rdi
+	movq	%rax, -280(%rbp)
+	movq	-280(%rbp), %rax
+	movq	%rax, -384(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateString
+	leaq	L_.str.18(%rip), %rsi
+	movq	-384(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	movq	-280(%rbp), %rdi
+	movq	%rdi, -392(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateObject
+	leaq	L_.str.20(%rip), %rsi
+	movq	%rax, -288(%rbp)
+	movq	-392(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	leaq	L_.str.22(%rip), %rdi
+	movq	-288(%rbp), %rax
+	movq	%rax, -400(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateString
+	leaq	L_.str.21(%rip), %rsi
+	movq	-400(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	movsd	LCPI2_2(%rip), %xmm0    ## xmm0 = mem[0],zero
+	movq	-288(%rbp), %rdi
+	movq	%rdi, -408(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateNumber
+	leaq	L_.str.23(%rip), %rsi
+	movq	-408(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	movsd	LCPI2_1(%rip), %xmm0    ## xmm0 = mem[0],zero
+	movq	-288(%rbp), %rdi
+	movq	%rdi, -416(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateNumber
+	leaq	L_.str.24(%rip), %rsi
+	movq	-416(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	movq	-288(%rbp), %rdi
+	movq	%rdi, -424(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateFalse
+	leaq	L_.str.25(%rip), %rsi
+	movq	-424(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	movsd	LCPI2_0(%rip), %xmm0    ## xmm0 = mem[0],zero
+	movq	-288(%rbp), %rdi
+	movq	%rdi, -432(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateNumber
+	leaq	L_.str.26(%rip), %rsi
+	movq	-432(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	movq	-280(%rbp), %rdi
+	callq	_cJSON_Print
+	movq	%rax, -320(%rbp)
+	movq	-280(%rbp), %rdi
+	callq	_cJSON_Delete
+	leaq	L_.str.1(%rip), %rdi
+	movq	-320(%rbp), %rsi
+	movb	$0, %al
+	callq	_printf
+	movq	-320(%rbp), %rdi
+	movl	%eax, -436(%rbp)        ## 4-byte Spill
+	callq	_free
+	movl	$7, %esi
+	leaq	-80(%rbp), %rdi
+	callq	_cJSON_CreateStringArray
+	movq	%rax, -280(%rbp)
+	movq	-280(%rbp), %rdi
+	callq	_cJSON_Print
+	movq	%rax, -320(%rbp)
+	movq	-280(%rbp), %rdi
+	callq	_cJSON_Delete
+	leaq	L_.str.1(%rip), %rdi
+	movq	-320(%rbp), %rsi
+	movb	$0, %al
+	callq	_printf
+	movq	-320(%rbp), %rdi
+	movl	%eax, -440(%rbp)        ## 4-byte Spill
+	callq	_free
+	callq	_cJSON_CreateArray
+	movq	%rax, -280(%rbp)
+	movl	$0, -324(%rbp)
+LBB2_1:                                 ## =>This Inner Loop Header: Depth=1
+	cmpl	$3, -324(%rbp)
+	jge	LBB2_4
+## BB#2:                                ##   in Loop: Header=BB2_1 Depth=1
+	movl	$3, %esi
+	leaq	-128(%rbp), %rax
+	movq	-280(%rbp), %rdi
+	movslq	-324(%rbp), %rcx
+	imulq	$12, %rcx, %rcx
+	addq	%rcx, %rax
+	movq	%rdi, -448(%rbp)        ## 8-byte Spill
+	movq	%rax, %rdi
+	callq	_cJSON_CreateIntArray
+	movq	-448(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rsi
+	callq	_cJSON_AddItemToArray
+## BB#3:                                ##   in Loop: Header=BB2_1 Depth=1
+	movl	-324(%rbp), %eax
+	addl	$1, %eax
+	movl	%eax, -324(%rbp)
+	jmp	LBB2_1
+LBB2_4:
+	movq	-280(%rbp), %rdi
+	callq	_cJSON_Print
+	movq	%rax, -320(%rbp)
+	movq	-280(%rbp), %rdi
+	callq	_cJSON_Delete
+	leaq	L_.str.1(%rip), %rdi
+	movq	-320(%rbp), %rsi
+	movb	$0, %al
+	callq	_printf
+	movq	-320(%rbp), %rdi
+	movl	%eax, -452(%rbp)        ## 4-byte Spill
+	callq	_free
+	callq	_cJSON_CreateObject
+	movq	%rax, -280(%rbp)
+	movq	-280(%rbp), %rdi
+	movq	%rdi, -464(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateObject
+	leaq	L_.str.27(%rip), %rsi
+	movq	%rax, -296(%rbp)
+	movq	-464(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	movsd	LCPI2_5(%rip), %xmm0    ## xmm0 = mem[0],zero
+	movq	-296(%rbp), %rdi
+	movq	%rdi, -472(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateNumber
+	leaq	L_.str.28(%rip), %rsi
+	movq	-472(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	movsd	LCPI2_4(%rip), %xmm0    ## xmm0 = mem[0],zero
+	movq	-296(%rbp), %rdi
+	movq	%rdi, -480(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateNumber
+	leaq	L_.str.29(%rip), %rsi
+	movq	-480(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	leaq	L_.str.31(%rip), %rdi
+	movq	-296(%rbp), %rax
+	movq	%rax, -488(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateString
+	leaq	L_.str.30(%rip), %rsi
+	movq	-488(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	movq	-296(%rbp), %rdi
+	movq	%rdi, -496(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateObject
+	leaq	L_.str.32(%rip), %rsi
+	movq	%rax, -304(%rbp)
+	movq	-496(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	leaq	L_.str.34(%rip), %rdi
+	movq	-304(%rbp), %rax
+	movq	%rax, -504(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateString
+	leaq	L_.str.33(%rip), %rsi
+	movq	-504(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	movsd	LCPI2_3(%rip), %xmm0    ## xmm0 = mem[0],zero
+	movq	-304(%rbp), %rdi
+	movq	%rdi, -512(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateNumber
+	leaq	L_.str.29(%rip), %rsi
+	movq	-512(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	leaq	L_.str.35(%rip), %rdi
+	movq	-304(%rbp), %rax
+	movq	%rax, -520(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateString
+	leaq	L_.str.28(%rip), %rsi
+	movq	-520(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	movl	$4, %esi
+	leaq	-144(%rbp), %rdi
+	movq	-296(%rbp), %rax
+	movq	%rax, -528(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateIntArray
+	leaq	L_.str.36(%rip), %rsi
+	movq	-528(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	movq	-280(%rbp), %rdi
+	callq	_cJSON_Print
+	movq	%rax, -320(%rbp)
+	movq	-280(%rbp), %rdi
+	callq	_cJSON_Delete
+	leaq	L_.str.1(%rip), %rdi
+	movq	-320(%rbp), %rsi
+	movb	$0, %al
+	callq	_printf
+	movq	-320(%rbp), %rdi
+	movl	%eax, -532(%rbp)        ## 4-byte Spill
+	callq	_free
+	callq	_cJSON_CreateArray
+	movq	%rax, -280(%rbp)
+	movl	$0, -324(%rbp)
+LBB2_5:                                 ## =>This Inner Loop Header: Depth=1
+	cmpl	$2, -324(%rbp)
+	jge	LBB2_8
+## BB#6:                                ##   in Loop: Header=BB2_5 Depth=1
+	movq	-280(%rbp), %rdi
+	movq	%rdi, -544(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateObject
+	movq	%rax, -312(%rbp)
+	movq	-544(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rsi
+	callq	_cJSON_AddItemToArray
+	leaq	-272(%rbp), %rax
+	movq	-312(%rbp), %rdi
+	movslq	-324(%rbp), %rsi
+	shlq	$6, %rsi
+	addq	%rsi, %rax
+	movq	(%rax), %rax
+	movq	%rdi, -552(%rbp)        ## 8-byte Spill
+	movq	%rax, %rdi
+	callq	_cJSON_CreateString
+	leaq	L_.str.37(%rip), %rsi
+	movq	-552(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	leaq	-272(%rbp), %rax
+	movq	-312(%rbp), %rdi
+	movslq	-324(%rbp), %rdx
+	shlq	$6, %rdx
+	addq	%rdx, %rax
+	movsd	8(%rax), %xmm0          ## xmm0 = mem[0],zero
+	movq	%rdi, -560(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateNumber
+	leaq	L_.str.38(%rip), %rsi
+	movq	-560(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	leaq	-272(%rbp), %rax
+	movq	-312(%rbp), %rdi
+	movslq	-324(%rbp), %rdx
+	shlq	$6, %rdx
+	addq	%rdx, %rax
+	movsd	16(%rax), %xmm0         ## xmm0 = mem[0],zero
+	movq	%rdi, -568(%rbp)        ## 8-byte Spill
+	callq	_cJSON_CreateNumber
+	leaq	L_.str.39(%rip), %rsi
+	movq	-568(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	leaq	-272(%rbp), %rax
+	movq	-312(%rbp), %rdi
+	movslq	-324(%rbp), %rdx
+	shlq	$6, %rdx
+	addq	%rdx, %rax
+	movq	24(%rax), %rax
+	movq	%rdi, -576(%rbp)        ## 8-byte Spill
+	movq	%rax, %rdi
+	callq	_cJSON_CreateString
+	leaq	L_.str.40(%rip), %rsi
+	movq	-576(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	leaq	-272(%rbp), %rax
+	movq	-312(%rbp), %rdi
+	movslq	-324(%rbp), %rdx
+	shlq	$6, %rdx
+	addq	%rdx, %rax
+	movq	32(%rax), %rax
+	movq	%rdi, -584(%rbp)        ## 8-byte Spill
+	movq	%rax, %rdi
+	callq	_cJSON_CreateString
+	leaq	L_.str.41(%rip), %rsi
+	movq	-584(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	leaq	-272(%rbp), %rax
+	movq	-312(%rbp), %rdi
+	movslq	-324(%rbp), %rdx
+	shlq	$6, %rdx
+	addq	%rdx, %rax
+	movq	40(%rax), %rax
+	movq	%rdi, -592(%rbp)        ## 8-byte Spill
+	movq	%rax, %rdi
+	callq	_cJSON_CreateString
+	leaq	L_.str.42(%rip), %rsi
+	movq	-592(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	leaq	-272(%rbp), %rax
+	movq	-312(%rbp), %rdi
+	movslq	-324(%rbp), %rdx
+	shlq	$6, %rdx
+	addq	%rdx, %rax
+	movq	48(%rax), %rax
+	movq	%rdi, -600(%rbp)        ## 8-byte Spill
+	movq	%rax, %rdi
+	callq	_cJSON_CreateString
+	leaq	L_.str.43(%rip), %rsi
+	movq	-600(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+	leaq	-272(%rbp), %rax
+	movq	-312(%rbp), %rdi
+	movslq	-324(%rbp), %rdx
+	shlq	$6, %rdx
+	addq	%rdx, %rax
+	movq	56(%rax), %rax
+	movq	%rdi, -608(%rbp)        ## 8-byte Spill
+	movq	%rax, %rdi
+	callq	_cJSON_CreateString
+	leaq	L_.str.44(%rip), %rsi
+	movq	-608(%rbp), %rdi        ## 8-byte Reload
+	movq	%rax, %rdx
+	callq	_cJSON_AddItemToObject
+## BB#7:                                ##   in Loop: Header=BB2_5 Depth=1
+	movl	-324(%rbp), %eax
+	addl	$1, %eax
+	movl	%eax, -324(%rbp)
+	jmp	LBB2_5
+LBB2_8:
+	movq	-280(%rbp), %rdi
+	callq	_cJSON_Print
+	movq	%rax, -320(%rbp)
+	movq	-280(%rbp), %rdi
+	callq	_cJSON_Delete
+	leaq	L_.str.1(%rip), %rdi
+	movq	-320(%rbp), %rsi
+	movb	$0, %al
+	callq	_printf
+	movq	-320(%rbp), %rdi
+	movl	%eax, -612(%rbp)        ## 4-byte Spill
+	callq	_free
+	movq	___stack_chk_guard@GOTPCREL(%rip), %rsi
+	movq	(%rsi), %rsi
+	cmpq	-24(%rbp), %rsi
+	jne	LBB2_10
+## BB#9:
+	addq	$608, %rsp              ## imm = 0x260
+	popq	%rbx
+	popq	%r14
+	popq	%rbp
+	retq
+LBB2_10:
+	callq	___stack_chk_fail
+	.cfi_endproc
+
+	.globl	_main
+	.align	4, 0x90
+_main:                                  ## @main
+	.cfi_startproc
+## BB#0:
+	pushq	%rbp
+Ltmp11:
+	.cfi_def_cfa_offset 16
+Ltmp12:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+Ltmp13:
+	.cfi_def_cfa_register %rbp
+	pushq	%r15
+	pushq	%r14
+	pushq	%r13
+	pushq	%r12
+	pushq	%rbx
+	subq	$1112, %rsp             ## imm = 0x458
+Ltmp14:
+	.cfi_offset %rbx, -56
+Ltmp15:
+	.cfi_offset %r12, -48
+Ltmp16:
+	.cfi_offset %r13, -40
+Ltmp17:
+	.cfi_offset %r14, -32
+Ltmp18:
+	.cfi_offset %r15, -24
+	leaq	-208(%rbp), %rax
+	leaq	L_main.text5(%rip), %rcx
+	movl	$399, %edx              ## imm = 0x18F
+                                        ## 
+	leaq	-1008(%rbp), %r8
+	leaq	L_main.text4(%rip), %r9
+	movl	$247, %r10d
+	movl	%r10d, %r11d
+	leaq	-608(%rbp), %rbx
+	leaq	L_main.text3(%rip), %r14
+	movl	$51, %r10d
+	movl	%r10d, %r15d
+	leaq	-352(%rbp), %r12
+	leaq	L_main.text2(%rip), %r13
+	movl	$79, %r10d
+                                        ## 
+	movq	%rax, -1032(%rbp)       ## 8-byte Spill
+	leaq	-288(%rbp), %rax
+	movq	%rax, -1040(%rbp)       ## 8-byte Spill
+	leaq	L_main.text1(%rip), %rax
+	movq	%rsi, -1048(%rbp)       ## 8-byte Spill
+	movl	$153, %esi
+                                        ## 
+	movq	%rax, -1056(%rbp)       ## 8-byte Spill
+	movq	___stack_chk_guard@GOTPCREL(%rip), %rax
+	movq	(%rax), %rax
+	movq	%rax, -48(%rbp)
+	movl	$0, -1012(%rbp)
+	movl	%edi, -1016(%rbp)
+	movq	-1048(%rbp), %rax       ## 8-byte Reload
+	movq	%rax, -1024(%rbp)
+	movq	-1032(%rbp), %rax       ## 8-byte Reload
+	movq	%rax, %rdi
+	movq	-1056(%rbp), %rax       ## 8-byte Reload
+	movq	%rsi, -1064(%rbp)       ## 8-byte Spill
+	movq	%rax, %rsi
+	movq	-1064(%rbp), %rax       ## 8-byte Reload
+	movq	%rdx, -1072(%rbp)       ## 8-byte Spill
+	movq	%rax, %rdx
+	movq	%r13, -1080(%rbp)       ## 8-byte Spill
+	movq	%r10, -1088(%rbp)       ## 8-byte Spill
+	movq	%rcx, -1096(%rbp)       ## 8-byte Spill
+	movq	%r12, -1104(%rbp)       ## 8-byte Spill
+	movq	%r8, -1112(%rbp)        ## 8-byte Spill
+	movq	%r9, -1120(%rbp)        ## 8-byte Spill
+	movq	%r11, -1128(%rbp)       ## 8-byte Spill
+	movq	%rbx, -1136(%rbp)       ## 8-byte Spill
+	movq	%r14, -1144(%rbp)       ## 8-byte Spill
+	movq	%r15, -1152(%rbp)       ## 8-byte Spill
+	callq	_memcpy
+	movq	-1040(%rbp), %rax       ## 8-byte Reload
+	movq	%rax, %rdi
+	movq	-1080(%rbp), %rsi       ## 8-byte Reload
+	movq	-1088(%rbp), %rdx       ## 8-byte Reload
+	callq	_memcpy
+	movq	-1104(%rbp), %rax       ## 8-byte Reload
+	movq	%rax, %rdi
+	movq	-1144(%rbp), %rsi       ## 8-byte Reload
+	movq	-1152(%rbp), %rdx       ## 8-byte Reload
+	callq	_memcpy
+	movq	-1136(%rbp), %rax       ## 8-byte Reload
+	movq	%rax, %rdi
+	movq	-1120(%rbp), %rsi       ## 8-byte Reload
+	movq	-1128(%rbp), %rdx       ## 8-byte Reload
+	callq	_memcpy
+	movq	-1112(%rbp), %rax       ## 8-byte Reload
+	movq	%rax, %rdi
+	movq	-1096(%rbp), %rsi       ## 8-byte Reload
+	movq	-1072(%rbp), %rdx       ## 8-byte Reload
+	callq	_memcpy
+	movq	-1032(%rbp), %rdi       ## 8-byte Reload
+	callq	_doit
+	leaq	-288(%rbp), %rdi
+	callq	_doit
+	leaq	-352(%rbp), %rdi
+	callq	_doit
+	leaq	-608(%rbp), %rdi
+	callq	_doit
+	leaq	-1008(%rbp), %rdi
+	callq	_doit
+	callq	_create_objects
+	movq	___stack_chk_guard@GOTPCREL(%rip), %rax
+	movq	(%rax), %rax
+	cmpq	-48(%rbp), %rax
+	jne	LBB3_2
+## BB#1:
+	xorl	%eax, %eax
+	addq	$1112, %rsp             ## imm = 0x458
+	popq	%rbx
+	popq	%r12
+	popq	%r13
+	popq	%r14
+	popq	%r15
+	popq	%rbp
+	retq
+LBB3_2:
+	callq	___stack_chk_fail
+	.cfi_endproc
+
+	.section	__TEXT,__cstring,cstring_literals
+L_.str:                                 ## @.str
+	.asciz	"Error before: [%s]\n"
+
+L_.str.1:                               ## @.str.1
+	.asciz	"%s\n"
+
+L_.str.2:                               ## @.str.2
+	.asciz	"rb"
+
+L_.str.3:                               ## @.str.3
+	.asciz	"Sunday"
+
+L_.str.4:                               ## @.str.4
+	.asciz	"Monday"
+
+L_.str.5:                               ## @.str.5
+	.asciz	"Tuesday"
+
+L_.str.6:                               ## @.str.6
+	.asciz	"Wednesday"
+
+L_.str.7:                               ## @.str.7
+	.asciz	"Thursday"
+
+L_.str.8:                               ## @.str.8
+	.asciz	"Friday"
+
+L_.str.9:                               ## @.str.9
+	.asciz	"Saturday"
+
+	.section	__DATA,__const
+	.align	4                       ## @create_objects.strings
+l_create_objects.strings:
+	.quad	L_.str.3
+	.quad	L_.str.4
+	.quad	L_.str.5
+	.quad	L_.str.6
+	.quad	L_.str.7
+	.quad	L_.str.8
+	.quad	L_.str.9
+
+	.section	__TEXT,__literal16,16byte_literals
+	.align	4                       ## @create_objects.ids
+L_create_objects.ids:
+	.long	116                     ## 0x74
+	.long	943                     ## 0x3af
+	.long	234                     ## 0xea
+	.long	38793                   ## 0x9789
+
+	.section	__TEXT,__cstring,cstring_literals
+L_.str.10:                              ## @.str.10
+	.asciz	"zip"
+
+L_.str.11:                              ## @.str.11
+	.space	1
+
+L_.str.12:                              ## @.str.12
+	.asciz	"SAN FRANCISCO"
+
+L_.str.13:                              ## @.str.13
+	.asciz	"CA"
+
+L_.str.14:                              ## @.str.14
+	.asciz	"94107"
+
+L_.str.15:                              ## @.str.15
+	.asciz	"US"
+
+L_.str.16:                              ## @.str.16
+	.asciz	"SUNNYVALE"
+
+L_.str.17:                              ## @.str.17
+	.asciz	"94085"
+
+	.section	__DATA,__const
+	.align	4                       ## @create_objects.fields
+l_create_objects.fields:
+	.quad	L_.str.10
+	.quad	4630512021884717394     ## double 37.766800000000003
+	.quad	-4585058774142410975    ## double -122.3959
+	.quad	L_.str.11
+	.quad	L_.str.12
+	.quad	L_.str.13
+	.quad	L_.str.14
+	.quad	L_.str.15
+	.quad	L_.str.10
+	.quad	4630456457457677315     ## double 37.371991000000001
+	.quad	-4585084803540882293    ## double -122.026
+	.quad	L_.str.11
+	.quad	L_.str.16
+	.quad	L_.str.13
+	.quad	L_.str.17
+	.quad	L_.str.15
+
+	.section	__TEXT,__cstring,cstring_literals
+L_.str.18:                              ## @.str.18
+	.asciz	"name"
+
+L_.str.19:                              ## @.str.19
+	.asciz	"Jack (\"Bee\") Nimble"
+
+L_.str.20:                              ## @.str.20
+	.asciz	"format"
+
+L_.str.21:                              ## @.str.21
+	.asciz	"type"
+
+L_.str.22:                              ## @.str.22
+	.asciz	"rect"
+
+L_.str.23:                              ## @.str.23
+	.asciz	"width"
+
+L_.str.24:                              ## @.str.24
+	.asciz	"height"
+
+L_.str.25:                              ## @.str.25
+	.asciz	"interlace"
+
+L_.str.26:                              ## @.str.26
+	.asciz	"frame rate"
+
+L_.str.27:                              ## @.str.27
+	.asciz	"Image"
+
+L_.str.28:                              ## @.str.28
+	.asciz	"Width"
+
+L_.str.29:                              ## @.str.29
+	.asciz	"Height"
+
+L_.str.30:                              ## @.str.30
+	.asciz	"Title"
+
+L_.str.31:                              ## @.str.31
+	.asciz	"View from 15th Floor"
+
+L_.str.32:                              ## @.str.32
+	.asciz	"Thumbnail"
+
+L_.str.33:                              ## @.str.33
+	.asciz	"Url"
+
+L_.str.34:                              ## @.str.34
+	.asciz	"http:/*www.example.com/image/481989943"
+
+L_.str.35:                              ## @.str.35
+	.asciz	"100"
+
+L_.str.36:                              ## @.str.36
+	.asciz	"IDs"
+
+L_.str.37:                              ## @.str.37
+	.asciz	"precision"
+
+L_.str.38:                              ## @.str.38
+	.asciz	"Latitude"
+
+L_.str.39:                              ## @.str.39
+	.asciz	"Longitude"
+
+L_.str.40:                              ## @.str.40
+	.asciz	"Address"
+
+L_.str.41:                              ## @.str.41
+	.asciz	"City"
+
+L_.str.42:                              ## @.str.42
+	.asciz	"State"
+
+L_.str.43:                              ## @.str.43
+	.asciz	"Zip"
+
+L_.str.44:                              ## @.str.44
+	.asciz	"Country"
+
+	.align	4                       ## @main.text1
+L_main.text1:
+	.asciz	"{\n\"name\": \"Jack (\\\"Bee\\\") Nimble\", \n\"format\": {\"type\":       \"rect\", \n\"width\":      1920, \n\"height\":     1080, \n\"interlace\":  false,\"frame rate\": 24\n}\n}"
+
+	.align	4                       ## @main.text2
+L_main.text2:
+	.asciz	"[\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"]"
+
+	.align	4                       ## @main.text3
+L_main.text3:
+	.asciz	"[\n    [0, -1, 0],\n    [1, 0, 0],\n    [0, 0, 1]\n\t]\n"
+
+	.align	4                       ## @main.text4
+L_main.text4:
+	.asciz	"{\n\t\t\"Image\": {\n\t\t\t\"Width\":  800,\n\t\t\t\"Height\": 600,\n\t\t\t\"Title\":  \"View from 15th Floor\",\n\t\t\t\"Thumbnail\": {\n\t\t\t\t\"Url\":    \"http:/*www.example.com/image/481989943\",\n\t\t\t\t\"Height\": 125,\n\t\t\t\t\"Width\":  \"100\"\n\t\t\t},\n\t\t\t\"IDs\": [116, 943, 234, 38793]\n\t\t}\n\t}"
+
+	.align	4                       ## @main.text5
+L_main.text5:
+	.asciz	"[\n\t {\n\t \"precision\": \"zip\",\n\t \"Latitude\":  37.7668,\n\t \"Longitude\": -122.3959,\n\t \"Address\":   \"\",\n\t \"City\":      \"SAN FRANCISCO\",\n\t \"State\":     \"CA\",\n\t \"Zip\":       \"94107\",\n\t \"Country\":   \"US\"\n\t },\n\t {\n\t \"precision\": \"zip\",\n\t \"Latitude\":  37.371991,\n\t \"Longitude\": -122.026020,\n\t \"Address\":   \"\",\n\t \"City\":      \"SUNNYVALE\",\n\t \"State\":     \"CA\",\n\t \"Zip\":       \"94085\",\n\t \"Country\":   \"US\"\n\t }\n\t ]"
+
+
+.subsections_via_symbols
