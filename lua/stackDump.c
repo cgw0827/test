@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <string.h>
-
 #include <lua.h>  
 #include <lauxlib.h>  
 #include <lualib.h>  
+
 // 从栈底到栈顶依次遍历整个堆栈
 static void stackDump(lua_State* L)
 {
@@ -34,7 +34,7 @@ static void stackDump(lua_State* L)
 
 int main(void)
 {
-    lua_State* L = lua_open();
+    lua_State* L = luaL_newstate();
     luaL_openlibs(L);
 
     lua_pushboolean(L, 1);
