@@ -47,3 +47,9 @@ for i,v in ipairs(testTable) do
 	print("i ==",i," v ==",v)
 end
 --]]
+---[[ test2702
+strTable=mysplit("I Love You!"," ");
+for i,v in ipairs(strTable) do
+	print("i ==",i," v ==",v)
+end
+--]]
