@@ -19,21 +19,27 @@ int luaopen_foo(lua_State *L){
 	return 0;
 }
 static int counter(lua_State *L){
-	int val=lua_tointeger(L,lua_upvalueindex(1));
-	printf(" val is %d \n",val);
+	int upindex=lua_upvalueindex(1);
+
+	int val=lua_tointeger(L,upindex);
+	printf(" val111 is %d upindex = %d \n",val,upindex);
 	stackDump(L);
 	lua_pushinteger(L,++val);
 	stackDump(L);
 	lua_pushvalue(L,-1);
 	stackDump(L);
-	lua_replace(L,lua_upvalueindex(1));
+	upindex=lua_upvalueindex(1);
+	printf(" val222 is %d upindex = %d \n",val,upindex);
+	lua_replace(L,upindex);
 	stackDump(L);
 	return 1;
 
 }
 int newCounter(lua_State *L){
-	lua_pushinteger(L,0);
+	// lua_pushinteger(L,0);
+	stackDump(L);
 	lua_pushcclosure(L,&counter,1);
+	stackDump(L);
 	return 1;
 }
 int main(){

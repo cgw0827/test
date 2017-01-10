@@ -778,15 +778,15 @@ Ltmp16:
 Ltmp17:
 	.cfi_def_cfa_register %rbp
 	subq	$16, %rsp
-	xorl	%eax, %eax
-	movl	%eax, %esi
 	movq	%rdi, -8(%rbp)
 	movq	-8(%rbp), %rdi
-	callq	_lua_pushinteger
+	callq	_stackDump
 	leaq	_counter(%rip), %rsi
 	movl	$1, %edx
 	movq	-8(%rbp), %rdi
 	callq	_lua_pushcclosure
+	movq	-8(%rbp), %rdi
+	callq	_stackDump
 	movl	$1, %eax
 	addq	$16, %rsp
 	popq	%rbp
@@ -805,26 +805,28 @@ Ltmp19:
 	movq	%rsp, %rbp
 Ltmp20:
 	.cfi_def_cfa_register %rbp
-	subq	$16, %rsp
-	movl	$4293966295, %esi       ## imm = 0xFFF0B9D7
+	subq	$32, %rsp
 	xorl	%eax, %eax
 	movl	%eax, %edx
 	movq	%rdi, -8(%rbp)
+	movl	$-1001001, -12(%rbp)    ## imm = 0xFFFFFFFFFFF0B9D7
 	movq	-8(%rbp), %rdi
+	movl	-12(%rbp), %esi
 	callq	_lua_tointegerx
 	leaq	L_.str.21(%rip), %rdi
 	movl	%eax, %esi
-	movl	%esi, -12(%rbp)
-	movl	-12(%rbp), %esi
+	movl	%esi, -16(%rbp)
+	movl	-16(%rbp), %esi
+	movl	-12(%rbp), %edx
 	movb	$0, %al
 	callq	_printf
 	movq	-8(%rbp), %rdi
-	movl	%eax, -16(%rbp)         ## 4-byte Spill
+	movl	%eax, -20(%rbp)         ## 4-byte Spill
 	callq	_stackDump
 	movq	-8(%rbp), %rdi
-	movl	-12(%rbp), %eax
+	movl	-16(%rbp), %eax
 	addl	$1, %eax
-	movl	%eax, -12(%rbp)
+	movl	%eax, -16(%rbp)
 	movslq	%eax, %rsi
 	callq	_lua_pushinteger
 	movq	-8(%rbp), %rdi
@@ -834,9 +836,16 @@ Ltmp20:
 	callq	_lua_pushvalue
 	movq	-8(%rbp), %rdi
 	callq	_stackDump
+	leaq	L_.str.22(%rip), %rdi
+	movl	$-1001001, -12(%rbp)    ## imm = 0xFFFFFFFFFFF0B9D7
+	movl	-16(%rbp), %esi
+	movl	-12(%rbp), %edx
+	movb	$0, %al
+	callq	_printf
 	movl	$4294967295, %esi       ## imm = 0xFFFFFFFF
-	movl	$4293966295, %edx       ## imm = 0xFFF0B9D7
 	movq	-8(%rbp), %rdi
+	movl	-12(%rbp), %edx
+	movl	%eax, -24(%rbp)         ## 4-byte Spill
 	callq	_lua_copy
 	movl	$4294967294, %esi       ## imm = 0xFFFFFFFE
 	movq	-8(%rbp), %rdi
@@ -844,7 +853,7 @@ Ltmp20:
 	movq	-8(%rbp), %rdi
 	callq	_stackDump
 	movl	$1, %eax
-	addq	$16, %rsp
+	addq	$32, %rsp
 	popq	%rbp
 	retq
 	.cfi_endproc
@@ -956,7 +965,10 @@ L_.str.20:                              ## @.str.20
 	.asciz	"\n"
 
 L_.str.21:                              ## @.str.21
-	.asciz	" val is %d \n"
+	.asciz	" val111 is %d upindex = %d \n"
+
+L_.str.22:                              ## @.str.22
+	.asciz	" val222 is %d upindex = %d \n"
 
 
 .subsections_via_symbols

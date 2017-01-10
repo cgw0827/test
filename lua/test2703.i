@@ -2615,21 +2615,27 @@ int luaopen_foo(lua_State *L){
  return 0;
 }
 static int counter(lua_State *L){
- int val=lua_tointegerx(L,(((-1000000 - 1000) - (1))),((void*)0));
- printf(" val is %d \n",val);
+ int upindex=((-1000000 - 1000) - (1));
+
+ int val=lua_tointegerx(L,(upindex),((void*)0));
+ printf(" val111 is %d upindex = %d \n",val,upindex);
  stackDump(L);
  lua_pushinteger(L,++val);
  stackDump(L);
  lua_pushvalue(L,-1);
  stackDump(L);
- (lua_copy(L, -1, (((-1000000 - 1000) - (1)))), lua_settop(L, -(1)-1));
+ upindex=((-1000000 - 1000) - (1));
+ printf(" val222 is %d upindex = %d \n",val,upindex);
+ (lua_copy(L, -1, (upindex)), lua_settop(L, -(1)-1));
  stackDump(L);
  return 1;
 
 }
 int newCounter(lua_State *L){
- lua_pushinteger(L,0);
+
+ stackDump(L);
  lua_pushcclosure(L,&counter,1);
+ stackDump(L);
  return 1;
 }
 int main(){

@@ -58,11 +58,11 @@ print("upstr== ",upstr);
 ---[[test2703
 local fun=function ( ... )
 	-- body
-	local func=newCounter()
+	local func=newCounter(10)
 	print("ff1 ",func());
 	print("ff1 ",func());
 	print("ff1 ",func());
-	func=newCounter()
+	func=newCounter(80)
 	print("ff2 ",func());
 	print("ff2 ",func());
 	print("ff2 ",func());
