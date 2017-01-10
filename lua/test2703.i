@@ -1,10 +1,11 @@
-# 1 "test2702.c"
+# 1 "test2703.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 330 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "test2702.c" 2
+# 1 "test2703.c" 2
+# 1 "./test2702.c" 1
 # 1 "./util.c" 1
 
 # 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stdarg.h" 1 3 4
@@ -2298,7 +2299,7 @@ void call_lua(lua_State*L,const char* func,const char* sig,...){
  lua_settop(L,0);
  stackDump(L);
 }
-# 2 "test2702.c" 2
+# 2 "./test2702.c" 2
 # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/ctype.h" 1 3 4
 # 70 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/ctype.h" 3 4
 # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/runetype.h" 1 3 4
@@ -2559,7 +2560,7 @@ isspecial(int _c)
 {
  return (__istype(_c, 0x00100000L));
 }
-# 3 "test2702.c" 2
+# 3 "./test2702.c" 2
 static int l_split(lua_State *L){
  const char* s=(luaL_checklstring(L, (1), ((void*)0)));
  const char* sep=(luaL_checklstring(L, (2), ((void*)0)));
@@ -2581,7 +2582,7 @@ static int l_split(lua_State *L){
  lua_rawseti(L,-2,i);
  return 1;
 }
-static int str_super(lua_State *L){
+static int l_super(lua_State *L){
  size_t l;
  size_t i;
  luaL_Buffer b;
@@ -2593,11 +2594,51 @@ static int str_super(lua_State *L){
  luaL_pushresult(&b);
  return 1;
 }
+# 2 "test2703.c" 2
+static int registerKey(lua_State *L, char * key,const char * mystr){
+ lua_pushlightuserdata(L,(void*)&key);
+ lua_pushstring(L,mystr);
+ lua_settable(L,(-1000000 - 1000));
+
+ lua_pushlightuserdata(L,(void*)&key);
+ lua_gettable(L,(-1000000 - 1000));
+ const char* str=lua_tolstring(L, (-1), ((void*)0));
+ printf(" result is %s\n",str);
+ return 1;
+
+}
+int luaopen_foo(lua_State *L){
+ lua_createtable(L, 0, 0);
+
+
+
+ return 0;
+}
+static int counter(lua_State *L){
+ int val=lua_tointegerx(L,(((-1000000 - 1000) - (1))),((void*)0));
+ printf(" val is %d \n",val);
+ stackDump(L);
+ lua_pushinteger(L,++val);
+ stackDump(L);
+ lua_pushvalue(L,-1);
+ stackDump(L);
+ (lua_copy(L, -1, (((-1000000 - 1000) - (1)))), lua_settop(L, -(1)-1));
+ stackDump(L);
+ return 1;
+
+}
+int newCounter(lua_State *L){
+ lua_pushinteger(L,0);
+ lua_pushcclosure(L,&counter,1);
+ return 1;
+}
 int main(){
  lua_State*L=luaL_newstate();
  luaL_openlibs(L);
- (lua_pushcclosure(L, ((l_split)), 0), lua_setglobal(L, ("mysplit")));
- (lua_pushcclosure(L, ((str_super)), 0), lua_setglobal(L, ("myupper")));
+
+
+ (lua_pushcclosure(L, ((counter)), 0), lua_setglobal(L, ("counter")));
+ (lua_pushcclosure(L, ((newCounter)), 0), lua_setglobal(L, ("newCounter")));
  loadfile(L,"test.lua");
  return 0;
 }

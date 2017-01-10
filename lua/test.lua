@@ -47,9 +47,26 @@ for i,v in ipairs(testTable) do
 	print("i ==",i," v ==",v)
 end
 --]]
----[[ test2702
+--[[ test2702
 strTable=mysplit("I Love You!"," ");
 for i,v in ipairs(strTable) do
 	print("i ==",i," v ==",v)
 end
+upstr=myupper("I Love You !");
+print("upstr== ",upstr);
+--]]
+---[[test2703
+local fun=function ( ... )
+	-- body
+	local func=newCounter()
+	print("ff1 ",func());
+	print("ff1 ",func());
+	print("ff1 ",func());
+	func=newCounter()
+	print("ff2 ",func());
+	print("ff2 ",func());
+	print("ff2 ",func());
+
+end
+fun()
 --]]

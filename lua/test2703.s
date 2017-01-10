@@ -738,9 +738,9 @@ LBB3_9:
 	retq
 	.cfi_endproc
 
-	.globl	_main
+	.globl	_luaopen_foo
 	.align	4, 0x90
-_main:                                  ## @main
+_luaopen_foo:                           ## @luaopen_foo
 	.cfi_startproc
 ## BB#0:
 	pushq	%rbp
@@ -752,19 +752,130 @@ Ltmp13:
 Ltmp14:
 	.cfi_def_cfa_register %rbp
 	subq	$16, %rsp
+	xorl	%eax, %eax
+	movq	%rdi, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	movl	%eax, %esi
+	movl	%eax, %edx
+	callq	_lua_createtable
+	xorl	%eax, %eax
+	addq	$16, %rsp
+	popq	%rbp
+	retq
+	.cfi_endproc
+
+	.globl	_newCounter
+	.align	4, 0x90
+_newCounter:                            ## @newCounter
+	.cfi_startproc
+## BB#0:
+	pushq	%rbp
+Ltmp15:
+	.cfi_def_cfa_offset 16
+Ltmp16:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+Ltmp17:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
+	xorl	%eax, %eax
+	movl	%eax, %esi
+	movq	%rdi, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	callq	_lua_pushinteger
+	leaq	_counter(%rip), %rsi
+	movl	$1, %edx
+	movq	-8(%rbp), %rdi
+	callq	_lua_pushcclosure
+	movl	$1, %eax
+	addq	$16, %rsp
+	popq	%rbp
+	retq
+	.cfi_endproc
+
+	.align	4, 0x90
+_counter:                               ## @counter
+	.cfi_startproc
+## BB#0:
+	pushq	%rbp
+Ltmp18:
+	.cfi_def_cfa_offset 16
+Ltmp19:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+Ltmp20:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
+	movl	$4293966295, %esi       ## imm = 0xFFF0B9D7
+	xorl	%eax, %eax
+	movl	%eax, %edx
+	movq	%rdi, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	callq	_lua_tointegerx
+	leaq	L_.str.21(%rip), %rdi
+	movl	%eax, %esi
+	movl	%esi, -12(%rbp)
+	movl	-12(%rbp), %esi
+	movb	$0, %al
+	callq	_printf
+	movq	-8(%rbp), %rdi
+	movl	%eax, -16(%rbp)         ## 4-byte Spill
+	callq	_stackDump
+	movq	-8(%rbp), %rdi
+	movl	-12(%rbp), %eax
+	addl	$1, %eax
+	movl	%eax, -12(%rbp)
+	movslq	%eax, %rsi
+	callq	_lua_pushinteger
+	movq	-8(%rbp), %rdi
+	callq	_stackDump
+	movl	$4294967295, %esi       ## imm = 0xFFFFFFFF
+	movq	-8(%rbp), %rdi
+	callq	_lua_pushvalue
+	movq	-8(%rbp), %rdi
+	callq	_stackDump
+	movl	$4294967295, %esi       ## imm = 0xFFFFFFFF
+	movl	$4293966295, %edx       ## imm = 0xFFF0B9D7
+	movq	-8(%rbp), %rdi
+	callq	_lua_copy
+	movl	$4294967294, %esi       ## imm = 0xFFFFFFFE
+	movq	-8(%rbp), %rdi
+	callq	_lua_settop
+	movq	-8(%rbp), %rdi
+	callq	_stackDump
+	movl	$1, %eax
+	addq	$16, %rsp
+	popq	%rbp
+	retq
+	.cfi_endproc
+
+	.globl	_main
+	.align	4, 0x90
+_main:                                  ## @main
+	.cfi_startproc
+## BB#0:
+	pushq	%rbp
+Ltmp21:
+	.cfi_def_cfa_offset 16
+Ltmp22:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+Ltmp23:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
 	movl	$0, -4(%rbp)
 	callq	_luaL_newstate
 	movq	%rax, -16(%rbp)
 	movq	-16(%rbp), %rdi
 	callq	_luaL_openlibs
-	leaq	_l_split(%rip), %rsi
+	leaq	_counter(%rip), %rsi
 	xorl	%edx, %edx
 	movq	-16(%rbp), %rdi
 	callq	_lua_pushcclosure
 	leaq	L_.str.10(%rip), %rsi
 	movq	-16(%rbp), %rdi
 	callq	_lua_setglobal
-	leaq	_str_super(%rip), %rsi
+	leaq	_newCounter(%rip), %rsi
 	xorl	%edx, %edx
 	movq	-16(%rbp), %rdi
 	callq	_lua_pushcclosure
@@ -778,161 +889,6 @@ Ltmp14:
 	addq	$16, %rsp
 	popq	%rbp
 	retq
-	.cfi_endproc
-
-	.align	4, 0x90
-_l_split:                               ## @l_split
-	.cfi_startproc
-## BB#0:
-	pushq	%rbp
-Ltmp15:
-	.cfi_def_cfa_offset 16
-Ltmp16:
-	.cfi_offset %rbp, -16
-	movq	%rsp, %rbp
-Ltmp17:
-	.cfi_def_cfa_register %rbp
-	subq	$64, %rsp
-	movl	$1, %esi
-	xorl	%eax, %eax
-	movl	%eax, %edx
-	movq	%rdi, -8(%rbp)
-	movq	-8(%rbp), %rdi
-	callq	_luaL_checklstring
-	movl	$2, %esi
-	xorl	%ecx, %ecx
-	movl	%ecx, %edx
-	movq	%rax, -16(%rbp)
-	movq	-8(%rbp), %rdi
-	callq	_luaL_checklstring
-	xorl	%ecx, %ecx
-	movq	%rax, -24(%rbp)
-	movl	$1, -36(%rbp)
-	movq	-8(%rbp), %rdi
-	movl	%ecx, %esi
-	movl	%ecx, %edx
-	callq	_lua_createtable
-LBB5_1:                                 ## =>This Inner Loop Header: Depth=1
-	movq	-16(%rbp), %rdi
-	movq	-24(%rbp), %rax
-	movsbl	(%rax), %esi
-	callq	_strchr
-	movq	%rax, -32(%rbp)
-	cmpq	$0, %rax
-	je	LBB5_3
-## BB#2:                                ##   in Loop: Header=BB5_1 Depth=1
-	movq	-8(%rbp), %rdi
-	movq	-16(%rbp), %rsi
-	movq	-32(%rbp), %rax
-	movq	-16(%rbp), %rcx
-	subq	%rcx, %rax
-	movq	%rax, %rdx
-	callq	_lua_pushlstring
-	movl	$4294967294, %esi       ## imm = 0xFFFFFFFE
-	movq	-8(%rbp), %rdi
-	movl	-36(%rbp), %r8d
-	movl	%r8d, %r9d
-	addl	$1, %r9d
-	movl	%r9d, -36(%rbp)
-	movslq	%r8d, %rdx
-	movq	%rax, -48(%rbp)         ## 8-byte Spill
-	callq	_lua_rawseti
-	movq	-32(%rbp), %rax
-	addq	$1, %rax
-	movq	%rax, -16(%rbp)
-	jmp	LBB5_1
-LBB5_3:
-	movq	-8(%rbp), %rdi
-	movq	-16(%rbp), %rsi
-	callq	_lua_pushstring
-	movl	$4294967294, %esi       ## imm = 0xFFFFFFFE
-	movq	-8(%rbp), %rdi
-	movslq	-36(%rbp), %rdx
-	movq	%rax, -56(%rbp)         ## 8-byte Spill
-	callq	_lua_rawseti
-	movl	$1, %eax
-	addq	$64, %rsp
-	popq	%rbp
-	retq
-	.cfi_endproc
-
-	.align	4, 0x90
-_str_super:                             ## @str_super
-	.cfi_startproc
-## BB#0:
-	pushq	%rbp
-Ltmp18:
-	.cfi_def_cfa_offset 16
-Ltmp19:
-	.cfi_offset %rbp, -16
-	movq	%rsp, %rbp
-Ltmp20:
-	.cfi_def_cfa_register %rbp
-	subq	$8272, %rsp             ## imm = 0x2050
-	movl	$1, %esi
-	leaq	-8248(%rbp), %rdx
-	movq	___stack_chk_guard@GOTPCREL(%rip), %rax
-	movq	(%rax), %rax
-	movq	%rax, -8(%rbp)
-	movq	%rdi, -8240(%rbp)
-	movq	-8240(%rbp), %rdi
-	callq	_luaL_checklstring
-	leaq	-8232(%rbp), %rsi
-	movq	%rax, -8264(%rbp)
-	movq	-8240(%rbp), %rdi
-	callq	_luaL_buffinit
-	movq	$0, -8256(%rbp)
-LBB6_1:                                 ## =>This Inner Loop Header: Depth=1
-	movq	-8256(%rbp), %rax
-	cmpq	-8248(%rbp), %rax
-	jae	LBB6_6
-## BB#2:                                ##   in Loop: Header=BB6_1 Depth=1
-	movb	$1, %al
-	movq	-8216(%rbp), %rcx
-	cmpq	-8224(%rbp), %rcx
-	movb	%al, -8265(%rbp)        ## 1-byte Spill
-	jb	LBB6_4
-## BB#3:                                ##   in Loop: Header=BB6_1 Depth=1
-	leaq	-8232(%rbp), %rdi
-	movl	$1, %eax
-	movl	%eax, %esi
-	callq	_luaL_prepbuffsize
-	cmpq	$0, %rax
-	setne	%cl
-	movb	%cl, -8265(%rbp)        ## 1-byte Spill
-LBB6_4:                                 ##   in Loop: Header=BB6_1 Depth=1
-	movb	-8265(%rbp), %al        ## 1-byte Reload
-	movq	-8256(%rbp), %rcx
-	movq	-8264(%rbp), %rdx
-	movsbl	(%rdx,%rcx), %edi
-	movb	%al, -8266(%rbp)        ## 1-byte Spill
-	callq	_toupper
-	movb	%al, %sil
-	movq	-8216(%rbp), %rcx
-	movq	%rcx, %rdx
-	addq	$1, %rdx
-	movq	%rdx, -8216(%rbp)
-	movq	-8232(%rbp), %rdx
-	movb	%sil, (%rdx,%rcx)
-## BB#5:                                ##   in Loop: Header=BB6_1 Depth=1
-	movq	-8256(%rbp), %rax
-	addq	$1, %rax
-	movq	%rax, -8256(%rbp)
-	jmp	LBB6_1
-LBB6_6:
-	leaq	-8232(%rbp), %rdi
-	callq	_luaL_pushresult
-	movq	___stack_chk_guard@GOTPCREL(%rip), %rdi
-	movq	(%rdi), %rdi
-	cmpq	-8(%rbp), %rdi
-	jne	LBB6_8
-## BB#7:
-	movl	$1, %eax
-	addq	$8272, %rsp             ## imm = 0x2050
-	popq	%rbp
-	retq
-LBB6_8:
-	callq	___stack_chk_fail
 	.cfi_endproc
 
 	.section	__TEXT,__cstring,cstring_literals
@@ -967,10 +923,10 @@ L_.str.9:                               ## @.str.9
 	.asciz	" invalid option (%c) *,"
 
 L_.str.10:                              ## @.str.10
-	.asciz	"mysplit"
+	.asciz	"counter"
 
 L_.str.11:                              ## @.str.11
-	.asciz	"myupper"
+	.asciz	"newCounter"
 
 L_.str.12:                              ## @.str.12
 	.asciz	"test.lua"
@@ -998,6 +954,9 @@ L_.str.19:                              ## @.str.19
 
 L_.str.20:                              ## @.str.20
 	.asciz	"\n"
+
+L_.str.21:                              ## @.str.21
+	.asciz	" val is %d \n"
 
 
 .subsections_via_symbols
