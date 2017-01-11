@@ -640,7 +640,7 @@ Ltmp11:
 	movq	%rdi, -8(%rbp)
 	movq	-8(%rbp), %rdi
 	callq	_lua_gettop
-	leaq	L_.str.16(%rip), %rdi
+	leaq	L_.str.18(%rip), %rdi
 	movl	%eax, -16(%rbp)
 	movl	-16(%rbp), %esi
 	movb	$0, %al
@@ -680,7 +680,7 @@ LBB3_3:                                 ##   in Loop: Header=BB3_1 Depth=1
 	movq	-8(%rbp), %rdi
 	movl	-12(%rbp), %esi
 	callq	_lua_tolstring
-	leaq	L_.str.17(%rip), %rdi
+	leaq	L_.str.19(%rip), %rdi
 	movq	%rax, %rsi
 	movb	$0, %al
 	callq	_printf
@@ -690,8 +690,8 @@ LBB3_4:                                 ##   in Loop: Header=BB3_1 Depth=1
 	movq	-8(%rbp), %rdi
 	movl	-12(%rbp), %esi
 	callq	_lua_toboolean
-	leaq	L_.str.19(%rip), %rdi
-	leaq	L_.str.18(%rip), %rcx
+	leaq	L_.str.21(%rip), %rdi
+	leaq	L_.str.20(%rip), %rcx
 	cmpl	$0, %eax
 	cmovneq	%rcx, %rdi
 	movb	$0, %al
@@ -704,7 +704,7 @@ LBB3_5:                                 ##   in Loop: Header=BB3_1 Depth=1
 	movq	-8(%rbp), %rdi
 	movl	-12(%rbp), %esi
 	callq	_lua_tonumberx
-	leaq	L_.str.20(%rip), %rdi
+	leaq	L_.str.22(%rip), %rdi
 	movb	$1, %al
 	callq	_printf
 	movl	%eax, -52(%rbp)         ## 4-byte Spill
@@ -713,13 +713,13 @@ LBB3_6:                                 ##   in Loop: Header=BB3_1 Depth=1
 	movq	-8(%rbp), %rdi
 	movl	-20(%rbp), %esi
 	callq	_lua_typename
-	leaq	L_.str.21(%rip), %rdi
+	leaq	L_.str.23(%rip), %rdi
 	movq	%rax, %rsi
 	movb	$0, %al
 	callq	_printf
 	movl	%eax, -56(%rbp)         ## 4-byte Spill
 LBB3_7:                                 ##   in Loop: Header=BB3_1 Depth=1
-	leaq	L_.str.22(%rip), %rdi
+	leaq	L_.str.24(%rip), %rdi
 	movb	$0, %al
 	callq	_printf
 	movl	%eax, -60(%rbp)         ## 4-byte Spill
@@ -729,7 +729,7 @@ LBB3_7:                                 ##   in Loop: Header=BB3_1 Depth=1
 	movl	%eax, -12(%rbp)
 	jmp	LBB3_1
 LBB3_9:
-	leaq	L_.str.23(%rip), %rdi
+	leaq	L_.str.25(%rip), %rdi
 	movb	$0, %al
 	callq	_printf
 	movl	%eax, -64(%rbp)         ## 4-byte Spill
@@ -765,35 +765,46 @@ Ltmp14:
 	movq	%rax, -16(%rbp)
 	movq	-16(%rbp), %rdi
 	callq	_luaL_openlibs
-	leaq	_newarray(%rip), %rsi
-	xorl	%edx, %edx
-	movq	-16(%rbp), %rdi
-	callq	_lua_pushcclosure
 	leaq	L_.str.11(%rip), %rsi
 	movq	-16(%rbp), %rdi
-	callq	_lua_setglobal
-	leaq	_setarray(%rip), %rsi
-	xorl	%edx, %edx
+	callq	_luaL_newmetatable
+	movl	$4294967295, %esi       ## imm = 0xFFFFFFFF
 	movq	-16(%rbp), %rdi
-	callq	_lua_pushcclosure
-	leaq	L_.str.12(%rip), %rsi
+	movl	%eax, -24(%rbp)         ## 4-byte Spill
+	callq	_lua_pushvalue
+	movl	$4294967294, %esi       ## imm = 0xFFFFFFFE
+	leaq	L_.str.12(%rip), %rdx
 	movq	-16(%rbp), %rdi
-	callq	_lua_setglobal
-	leaq	_getarray(%rip), %rsi
+	callq	_lua_setfield
+	leaq	_newarray(%rip), %rsi
 	xorl	%edx, %edx
 	movq	-16(%rbp), %rdi
 	callq	_lua_pushcclosure
 	leaq	L_.str.13(%rip), %rsi
 	movq	-16(%rbp), %rdi
 	callq	_lua_setglobal
-	leaq	_getsize(%rip), %rsi
+	leaq	_setarray(%rip), %rsi
 	xorl	%edx, %edx
 	movq	-16(%rbp), %rdi
 	callq	_lua_pushcclosure
 	leaq	L_.str.14(%rip), %rsi
 	movq	-16(%rbp), %rdi
 	callq	_lua_setglobal
+	leaq	_getarray(%rip), %rsi
+	xorl	%edx, %edx
+	movq	-16(%rbp), %rdi
+	callq	_lua_pushcclosure
 	leaq	L_.str.15(%rip), %rsi
+	movq	-16(%rbp), %rdi
+	callq	_lua_setglobal
+	leaq	_getsize(%rip), %rsi
+	xorl	%edx, %edx
+	movq	-16(%rbp), %rdi
+	callq	_lua_pushcclosure
+	leaq	L_.str.16(%rip), %rsi
+	movq	-16(%rbp), %rdi
+	callq	_lua_setglobal
+	leaq	L_.str.17(%rip), %rsi
 	movq	-16(%rbp), %rdi
 	callq	_loadfile
 	xorl	%eax, %eax
@@ -827,7 +838,7 @@ Ltmp17:
 	jge	LBB5_2
 ## BB#1:
 	movl	$1, %esi
-	leaq	L_.str.24(%rip), %rdx
+	leaq	L_.str.26(%rip), %rdx
 	movq	-8(%rbp), %rdi
 	callq	_luaL_argerror
 	cmpl	$0, %eax
@@ -871,7 +882,17 @@ LBB5_3:                                 ## =>This Inner Loop Header: Depth=1
 	movl	%eax, -32(%rbp)
 	jmp	LBB5_3
 LBB5_6:
-	movl	$1, %eax
+	movl	$4293966296, %esi       ## imm = 0xFFF0B9D8
+	leaq	L_.str.11(%rip), %rdx
+	movq	-8(%rbp), %rdi
+	callq	_lua_getfield
+	movl	$4294967294, %esi       ## imm = 0xFFFFFFFE
+	movq	-8(%rbp), %rdi
+	movl	%eax, -40(%rbp)         ## 4-byte Spill
+	callq	_lua_setmetatable
+	movl	$1, %esi
+	movl	%eax, -44(%rbp)         ## 4-byte Spill
+	movl	%esi, %eax
 	addq	$48, %rsp
 	popq	%rbp
 	retq
@@ -890,96 +911,32 @@ Ltmp19:
 Ltmp20:
 	.cfi_def_cfa_register %rbp
 	subq	$32, %rsp
-	movl	$1, %esi
+	leaq	-12(%rbp), %rsi
 	movq	%rdi, -8(%rbp)
 	movq	-8(%rbp), %rdi
-	callq	_lua_touserdata
-	movl	$2, %esi
-	movq	%rax, -16(%rbp)
-	movq	-8(%rbp), %rdi
-	callq	_luaL_checkinteger
+	callq	_getindex
 	movl	$3, %esi
-	subq	$1, %rax
-	movl	%eax, %ecx
-	movl	%ecx, -20(%rbp)
+	movq	%rax, -24(%rbp)
 	movq	-8(%rbp), %rdi
 	callq	_luaL_checkany
-	movb	$1, %dl
-	cmpq	$0, -16(%rbp)
-	movb	%dl, -21(%rbp)          ## 1-byte Spill
-	jne	LBB6_2
-## BB#1:
-	movl	$1, %esi
-	leaq	L_.str.25(%rip), %rdx
-	movq	-8(%rbp), %rdi
-	callq	_luaL_argerror
-	cmpl	$0, %eax
-	setne	%cl
-	movb	%cl, -21(%rbp)          ## 1-byte Spill
-LBB6_2:
-	movb	-21(%rbp), %al          ## 1-byte Reload
-	xorl	%ecx, %ecx
-	cmpl	-20(%rbp), %ecx
-	movb	%al, -22(%rbp)          ## 1-byte Spill
-	jg	LBB6_4
-## BB#3:
-	movb	$1, %al
-	movl	-20(%rbp), %ecx
-	movq	-16(%rbp), %rdx
-	cmpl	(%rdx), %ecx
-	movb	%al, -23(%rbp)          ## 1-byte Spill
-	jl	LBB6_5
-LBB6_4:
-	movl	$2, %esi
-	leaq	L_.str.26(%rip), %rdx
-	movq	-8(%rbp), %rdi
-	callq	_luaL_argerror
-	cmpl	$0, %eax
-	setne	%cl
-	movb	%cl, -23(%rbp)          ## 1-byte Spill
-LBB6_5:
-	movb	-23(%rbp), %al          ## 1-byte Reload
 	movl	$3, %esi
 	movq	-8(%rbp), %rdi
-	movb	%al, -24(%rbp)          ## 1-byte Spill
 	callq	_lua_toboolean
 	cmpl	$0, %eax
-	je	LBB6_7
-## BB#6:
-	movl	$1, %eax
-	movl	-20(%rbp), %ecx
-	movl	%ecx, %edx
-	andq	$31, %rdx
-	movl	%edx, %ecx
-                                        ## 
-	shll	%cl, %eax
-	movl	-20(%rbp), %esi
-	movl	%esi, %edx
-	shrq	$5, %rdx
-	movq	-16(%rbp), %rdi
-	orl	4(%rdi,%rdx,4), %eax
-	movl	%eax, 4(%rdi,%rdx,4)
-	jmp	LBB6_8
-LBB6_7:
+	je	LBB6_2
+## BB#1:
+	movl	-12(%rbp), %eax
+	movq	-24(%rbp), %rcx
+	orl	(%rcx), %eax
+	movl	%eax, (%rcx)
+	jmp	LBB6_3
+LBB6_2:
 	xorl	%eax, %eax
-	movl	$1, %ecx
-	movl	-20(%rbp), %edx
-	movl	%edx, %esi
-	andq	$31, %rsi
-	movl	%esi, %edx
-	movl	%ecx, -28(%rbp)         ## 4-byte Spill
-	movl	%edx, %ecx
-                                        ## 
-	movl	-28(%rbp), %edx         ## 4-byte Reload
-	shll	%cl, %edx
-	subl	%edx, %eax
-	movl	-20(%rbp), %edx
-	movl	%edx, %esi
-	shrq	$5, %rsi
-	movq	-16(%rbp), %rdi
-	andl	4(%rdi,%rsi,4), %eax
-	movl	%eax, 4(%rdi,%rsi,4)
-LBB6_8:
+	subl	-12(%rbp), %eax
+	movq	-24(%rbp), %rcx
+	andl	(%rcx), %eax
+	movl	%eax, (%rcx)
+LBB6_3:
 	xorl	%eax, %eax
 	addq	$32, %rsp
 	popq	%rbp
@@ -999,71 +956,16 @@ Ltmp22:
 Ltmp23:
 	.cfi_def_cfa_register %rbp
 	subq	$32, %rsp
-	movl	$1, %esi
+	leaq	-12(%rbp), %rsi
 	movq	%rdi, -8(%rbp)
 	movq	-8(%rbp), %rdi
-	callq	_lua_touserdata
-	movl	$2, %esi
-	movq	%rax, -16(%rbp)
+	callq	_getindex
+	movq	%rax, -24(%rbp)
 	movq	-8(%rbp), %rdi
-	callq	_luaL_checkinteger
-	movb	$1, %cl
-	subq	$1, %rax
-	movl	%eax, %esi
-	movl	%esi, -20(%rbp)
-	cmpq	$0, -16(%rbp)
-	movb	%cl, -21(%rbp)          ## 1-byte Spill
-	jne	LBB7_2
-## BB#1:
-	movl	$1, %esi
-	leaq	L_.str.25(%rip), %rdx
-	movq	-8(%rbp), %rdi
-	callq	_luaL_argerror
-	cmpl	$0, %eax
-	setne	%cl
-	movb	%cl, -21(%rbp)          ## 1-byte Spill
-LBB7_2:
-	movb	-21(%rbp), %al          ## 1-byte Reload
-	xorl	%ecx, %ecx
-	cmpl	-20(%rbp), %ecx
-	movb	%al, -22(%rbp)          ## 1-byte Spill
-	jg	LBB7_4
-## BB#3:
-	movb	$1, %al
-	movl	-20(%rbp), %ecx
-	movq	-16(%rbp), %rdx
-	cmpl	(%rdx), %ecx
-	movb	%al, -23(%rbp)          ## 1-byte Spill
-	jl	LBB7_5
-LBB7_4:
-	movl	$2, %esi
-	leaq	L_.str.26(%rip), %rdx
-	movq	-8(%rbp), %rdi
-	callq	_luaL_argerror
-	cmpl	$0, %eax
-	setne	%cl
-	movb	%cl, -23(%rbp)          ## 1-byte Spill
-LBB7_5:
-	movb	-23(%rbp), %al          ## 1-byte Reload
-	movl	$1, %ecx
-	movq	-8(%rbp), %rdi
-	movl	-20(%rbp), %edx
-	movl	%edx, %esi
-	shrq	$5, %rsi
-	movq	-16(%rbp), %r8
-	movl	4(%r8,%rsi,4), %edx
-	movl	-20(%rbp), %r9d
-	movl	%r9d, %esi
-	andq	$31, %rsi
-	movl	%esi, %r9d
-	movl	%ecx, -28(%rbp)         ## 4-byte Spill
-	movl	%r9d, %ecx
-                                        ## 
-	movl	-28(%rbp), %r9d         ## 4-byte Reload
-	shll	%cl, %r9d
-	andl	%r9d, %edx
-	movl	%edx, %esi
-	movb	%al, -29(%rbp)          ## 1-byte Spill
+	movq	-24(%rbp), %rax
+	movl	(%rax), %ecx
+	andl	-12(%rbp), %ecx
+	movl	%ecx, %esi
 	callq	_lua_pushboolean
 	movq	-8(%rbp), %rdi
 	callq	_stackDump
@@ -1087,9 +989,10 @@ Ltmp26:
 	.cfi_def_cfa_register %rbp
 	subq	$32, %rsp
 	movl	$1, %esi
+	leaq	L_.str.11(%rip), %rdx
 	movq	%rdi, -8(%rbp)
 	movq	-8(%rbp), %rdi
-	callq	_lua_touserdata
+	callq	_luaL_checkudata
 	movb	$1, %cl
 	movq	%rax, -16(%rbp)
 	cmpq	$0, -16(%rbp)
@@ -1097,7 +1000,7 @@ Ltmp26:
 	jne	LBB8_2
 ## BB#1:
 	movl	$1, %esi
-	leaq	L_.str.25(%rip), %rdx
+	leaq	L_.str.27(%rip), %rdx
 	movq	-8(%rbp), %rdi
 	callq	_luaL_argerror
 	cmpl	$0, %eax
@@ -1112,6 +1015,94 @@ LBB8_2:
 	callq	_lua_pushinteger
 	movl	$1, %eax
 	addq	$32, %rsp
+	popq	%rbp
+	retq
+	.cfi_endproc
+
+	.align	4, 0x90
+_getindex:                              ## @getindex
+	.cfi_startproc
+## BB#0:
+	pushq	%rbp
+Ltmp27:
+	.cfi_def_cfa_offset 16
+Ltmp28:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+Ltmp29:
+	.cfi_def_cfa_register %rbp
+	subq	$48, %rsp
+	movl	$1, %eax
+	leaq	L_.str.11(%rip), %rdx
+	movq	%rdi, -8(%rbp)
+	movq	%rsi, -16(%rbp)
+	movq	-8(%rbp), %rdi
+	movl	%eax, %esi
+	callq	_luaL_checkudata
+	movb	$1, %cl
+	movq	%rax, -24(%rbp)
+	cmpq	$0, -24(%rbp)
+	movb	%cl, -29(%rbp)          ## 1-byte Spill
+	jne	LBB9_2
+## BB#1:
+	movl	$1, %esi
+	leaq	L_.str.27(%rip), %rdx
+	movq	-8(%rbp), %rdi
+	callq	_luaL_argerror
+	cmpl	$0, %eax
+	setne	%cl
+	movb	%cl, -29(%rbp)          ## 1-byte Spill
+LBB9_2:
+	movb	-29(%rbp), %al          ## 1-byte Reload
+	movl	$2, %esi
+	movq	-8(%rbp), %rdi
+	movb	%al, -30(%rbp)          ## 1-byte Spill
+	callq	_luaL_checkinteger
+	xorl	%esi, %esi
+	subq	$1, %rax
+	movl	%eax, %ecx
+	movl	%ecx, -28(%rbp)
+	cmpl	-28(%rbp), %esi
+	jg	LBB9_4
+## BB#3:
+	movb	$1, %al
+	movl	-28(%rbp), %ecx
+	movq	-24(%rbp), %rdx
+	cmpl	(%rdx), %ecx
+	movb	%al, -31(%rbp)          ## 1-byte Spill
+	jle	LBB9_5
+LBB9_4:
+	movl	$2, %esi
+	leaq	L_.str.28(%rip), %rdx
+	movq	-8(%rbp), %rdi
+	callq	_luaL_argerror
+	cmpl	$0, %eax
+	setne	%cl
+	movb	%cl, -31(%rbp)          ## 1-byte Spill
+LBB9_5:
+	movb	-31(%rbp), %al          ## 1-byte Reload
+	movl	$1, %ecx
+	movl	-28(%rbp), %edx
+	movl	%edx, %esi
+	andq	$31, %rsi
+	movl	%esi, %edx
+	movl	%ecx, -36(%rbp)         ## 4-byte Spill
+	movl	%edx, %ecx
+                                        ## 
+	movl	-36(%rbp), %edx         ## 4-byte Reload
+	shll	%cl, %edx
+	movq	-16(%rbp), %rsi
+	movl	%edx, (%rsi)
+	movl	-28(%rbp), %edx
+	movl	%edx, %esi
+	shrq	$5, %rsi
+	movq	-24(%rbp), %rdi
+	addq	$4, %rdi
+	shlq	$2, %rsi
+	addq	%rsi, %rdi
+	movb	%al, -37(%rbp)          ## 1-byte Spill
+	movq	%rdi, %rax
+	addq	$48, %rsp
 	popq	%rbp
 	retq
 	.cfi_endproc
@@ -1151,51 +1142,57 @@ L_.str.10:                              ## @.str.10
 	.asciz	" BITS_PER_WORD = %ld sizeof(unsigned int) = %ld \n"
 
 L_.str.11:                              ## @.str.11
-	.asciz	"newarray"
+	.asciz	"LuaBook.array"
 
 L_.str.12:                              ## @.str.12
-	.asciz	"setarray"
+	.asciz	"--index"
 
 L_.str.13:                              ## @.str.13
-	.asciz	"getarray"
+	.asciz	"newarray"
 
 L_.str.14:                              ## @.str.14
-	.asciz	"getsize"
+	.asciz	"setarray"
 
 L_.str.15:                              ## @.str.15
-	.asciz	"test2801.lua"
+	.asciz	"getarray"
 
 L_.str.16:                              ## @.str.16
-	.asciz	"top = %d\n  "
+	.asciz	"getsize"
 
 L_.str.17:                              ## @.str.17
-	.asciz	"'%s'"
+	.asciz	"test2801.lua"
 
 L_.str.18:                              ## @.str.18
-	.asciz	"true"
+	.asciz	"top = %d\n  "
 
 L_.str.19:                              ## @.str.19
-	.asciz	"false"
+	.asciz	"'%s'"
 
 L_.str.20:                              ## @.str.20
-	.asciz	"%g"
+	.asciz	"true"
 
 L_.str.21:                              ## @.str.21
-	.asciz	"%s"
+	.asciz	"false"
 
 L_.str.22:                              ## @.str.22
-	.asciz	"  "
+	.asciz	"%g"
 
 L_.str.23:                              ## @.str.23
-	.asciz	"\n"
+	.asciz	"%s"
 
 L_.str.24:                              ## @.str.24
-	.asciz	"invalid size"
+	.asciz	"  "
 
 L_.str.25:                              ## @.str.25
-	.asciz	"'array' expected"
+	.asciz	"\n"
 
 L_.str.26:                              ## @.str.26
+	.asciz	"invalid size"
+
+L_.str.27:                              ## @.str.27
+	.asciz	"'array' expected"
+
+L_.str.28:                              ## @.str.28
 	.asciz	"index out of range"
 
 

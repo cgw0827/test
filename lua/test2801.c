@@ -5,13 +5,22 @@
 #define I_WORD(i) ((unsigned int)(i)/BITS_PER_WORD)
 #define I_BIT(i)  (1<<((unsigned int)(i)%BITS_PER_WORD))
 
+#define checkarray(L) \
+		(NumArray *) luaL_checkudata(L,1,"LuaBook.array")
 typedef struct NumArray
 {
 	int size;
 	unsigned int value[1];
 
 }NumArray;
-
+static unsigned int * getindex(lua_State *L,unsigned int *mask){
+	NumArray *a=checkarray(L);
+	luaL_argcheck(L, a!=NULL,1,"'array' expected");
+	int index=luaL_checkinteger(L,2)-1;
+	luaL_argcheck(L,0<=index && index <= a->size,2,"index out of range");
+	*mask = I_BIT(index);
+	return &a->value[I_WORD(index)];
+}
 static int newarray(lua_State *L){
 	size_t nbytes;
 	NumArray *a;
@@ -24,35 +33,44 @@ static int newarray(lua_State *L){
 	{
 		a->value[i] = 0;
 	}
+	luaL_getmetatable(L,"LuaBook.array");
+	lua_setmetatable(L,-2);
 	return 1;
 }
 
 static int setarray(lua_State *L){
-	NumArray *a = (NumArray *)lua_touserdata(L,1);
-	int index = luaL_checkinteger(L,2) - 1;
+	// NumArray *a = (NumArray *)lua_touserdata(L,1);
+	// int index = luaL_checkinteger(L,2) - 1;
+	unsigned int mask;
+	unsigned int *entry = getindex(L,&mask);
 	luaL_checkany(L,3);
-	luaL_argcheck(L, a!=NULL,1,"'array' expected");
-	luaL_argcheck(L,0<=index && index < a->size,2,"index out of range");
+	// luaL_argcheck(L, a!=NULL,1,"'array' expected");
+	// luaL_argcheck(L,0<=index && index < a->size,2,"index out of range");
 	if (lua_toboolean(L,3))
 	{
-		a->value[I_WORD(index)] |= I_BIT(index);
+		// a->value[I_WORD(index)] |= I_BIT(index);
+		*entry |= mask;
 	}else {
-		a->value[I_WORD(index)] &= -I_BIT(index);
+		*entry &= -mask;
+		// a->value[I_WORD(index)] &= -I_BIT(index);
 	}
 	return 0;
 }
 
 static int getarray(lua_State *L){
-	NumArray *a = (NumArray *)lua_touserdata(L,1);
-	int index = luaL_checkinteger(L,2)-1;
-	luaL_argcheck(L,a!=NULL,1,"'array' expected");
-	luaL_argcheck(L,0<=index && index < a->size,2,"index out of range");
-	lua_pushboolean(L,a->value[I_WORD(index)]&I_BIT(index));
+	// NumArray *a = (NumArray *)lua_touserdata(L,1);
+	// int index = luaL_checkinteger(L,2)-1;
+	// luaL_argcheck(L,a!=NULL,1,"'array' expected");
+	// luaL_argcheck(L,0<=index && index < a->size,2,"index out of range");
+	unsigned int mask;
+	unsigned int *entry = getindex(L,&mask);
+	// lua_pushboolean(L,a->value[I_WORD(index)]&I_BIT(index));
+	lua_pushboolean(L,*entry & mask);
 	stackDump(L);
 	return 1;
 }
 static int getsize(lua_State *L){
-	NumArray *a = (NumArray *)lua_touserdata(L,1);
+	NumArray *a = checkarray(L);
 	luaL_argcheck(L,a!=NULL,1,"'array' expected");
 	lua_pushinteger(L,a->size);
 	return 1;
@@ -62,6 +80,10 @@ int main(){
 	printf(" BITS_PER_WORD = %ld sizeof(unsigned int) = %ld \n",BITS_PER_WORD,sizeof(unsigned int));
 	lua_State *L = luaL_newstate();
 	luaL_openlibs(L);
+	luaL_newmetatable(L,"LuaBook.array");
+	lua_pushvalue(L,-1);
+	lua_setfield(L,-2,"--index");
+	
 	lua_register(L,"newarray",newarray);
 	lua_register(L,"setarray",setarray);
 	lua_register(L,"getarray",getarray);
