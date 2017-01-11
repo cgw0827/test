@@ -16,7 +16,7 @@ double f(lua_State *L,double x,double y){
 int main(){
 	lua_State* L =luaL_newstate();
 	luaL_openlibs(L);
-	loadfile(L,"test.lua");
+	loadfile(L,"test2503.lua");
 	// double z=f(L,10,20);
 	// double z;
 	// call_lua(L,"f","dd>d",0.6,0.8,&z);

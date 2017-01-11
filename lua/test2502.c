@@ -57,6 +57,6 @@ int main(){
 	while(colortable[i].name!=NULL){
 		setcolor(L,&colortable[i++]);
 	}
-	load(L,"test.lua");
+	load(L,"test2502.lua");
 	return 0;
 }

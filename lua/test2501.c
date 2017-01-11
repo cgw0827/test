@@ -17,7 +17,7 @@ int main(){
 	int h;
 	lua_State* L=luaL_newstate();
 
-	load(L,"test.lua",&w,&h);
+	load(L,"test2501.lua",&w,&h);
 	printf("w = %d h = %d \n",w,h);
 	return 0;
 }

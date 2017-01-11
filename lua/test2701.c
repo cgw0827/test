@@ -22,6 +22,6 @@ int main(){
 	lua_State* L =luaL_newstate();
 	luaL_openlibs(L);
 	luaopen_mylib(L);
-	loadfile(L,"test.lua");
+	loadfile(L,"test2701.lua");
 	return 0;
 }

@@ -33,11 +33,11 @@ static int l_super(lua_State *L){
 	luaL_pushresult(&b);
 	return 1;
 }
-// int main(){
-// 	lua_State*L=luaL_newstate();
-// 	luaL_openlibs(L);
-// 	lua_register(L,"mysplit",l_split);
-// 	lua_register(L,"myupper",l_super);
-// 	loadfile(L,"test.lua");
-// 	return 0;
-// }
+int main(){
+	lua_State*L=luaL_newstate();
+	luaL_openlibs(L);
+	lua_register(L,"mysplit",l_split);
+	lua_register(L,"myupper",l_super);
+	loadfile(L,"test2702.lua");
+	return 0;
+}

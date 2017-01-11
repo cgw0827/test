@@ -49,6 +49,6 @@ int main(){
 	// luaopen_foo(L);
 	lua_register(L,"counter",counter);
 	lua_register(L,"newCounter",newCounter);
-	loadfile(L,"test.lua");	
+	loadfile(L,"test2703.lua");	
 	return 0;
 }
