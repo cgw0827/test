@@ -1,7 +1,7 @@
 # 1 "test2801.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 329 "<built-in>" 3
+# 330 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "test2801.c" 2
@@ -13,30 +13,30 @@ typedef __builtin_va_list va_list;
 # 50 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
 # 3 "./util.c" 2
-# 1 "/usr/include/stdio.h" 1 3 4
-# 64 "/usr/include/stdio.h" 3 4
-# 1 "/usr/include/sys/cdefs.h" 1 3 4
-# 533 "/usr/include/sys/cdefs.h" 3 4
-# 1 "/usr/include/sys/_symbol_aliasing.h" 1 3 4
-# 534 "/usr/include/sys/cdefs.h" 2 3 4
-# 599 "/usr/include/sys/cdefs.h" 3 4
-# 1 "/usr/include/sys/_posix_availability.h" 1 3 4
-# 600 "/usr/include/sys/cdefs.h" 2 3 4
-# 65 "/usr/include/stdio.h" 2 3 4
-# 1 "/usr/include/Availability.h" 1 3 4
-# 172 "/usr/include/Availability.h" 3 4
-# 1 "/usr/include/AvailabilityInternal.h" 1 3 4
-# 173 "/usr/include/Availability.h" 2 3 4
-# 66 "/usr/include/stdio.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 1 3 4
+# 64 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/cdefs.h" 1 3 4
+# 587 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/cdefs.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_symbol_aliasing.h" 1 3 4
+# 588 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/cdefs.h" 2 3 4
+# 653 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/cdefs.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_posix_availability.h" 1 3 4
+# 654 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/cdefs.h" 2 3 4
+# 65 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/Availability.h" 1 3 4
+# 184 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/Availability.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/AvailabilityInternal.h" 1 3 4
+# 185 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/Availability.h" 2 3 4
+# 66 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 2 3 4
 
-# 1 "/usr/include/_types.h" 1 3 4
-# 27 "/usr/include/_types.h" 3 4
-# 1 "/usr/include/sys/_types.h" 1 3 4
-# 33 "/usr/include/sys/_types.h" 3 4
-# 1 "/usr/include/machine/_types.h" 1 3 4
-# 32 "/usr/include/machine/_types.h" 3 4
-# 1 "/usr/include/i386/_types.h" 1 3 4
-# 37 "/usr/include/i386/_types.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types.h" 1 3 4
+# 27 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types.h" 1 3 4
+# 33 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/_types.h" 1 3 4
+# 32 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/_types.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_types.h" 1 3 4
+# 37 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_types.h" 3 4
 typedef signed char __int8_t;
 
 
@@ -51,7 +51,7 @@ typedef unsigned long long __uint64_t;
 
 typedef long __darwin_intptr_t;
 typedef unsigned int __darwin_natural_t;
-# 70 "/usr/include/i386/_types.h" 3 4
+# 70 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_types.h" 3 4
 typedef int __darwin_ct_rune_t;
 
 
@@ -103,9 +103,9 @@ typedef unsigned long __darwin_clock_t;
 typedef __uint32_t __darwin_socklen_t;
 typedef long __darwin_ssize_t;
 typedef long __darwin_time_t;
-# 33 "/usr/include/machine/_types.h" 2 3 4
-# 34 "/usr/include/sys/_types.h" 2 3 4
-# 55 "/usr/include/sys/_types.h" 3 4
+# 33 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/_types.h" 2 3 4
+# 34 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types.h" 2 3 4
+# 55 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types.h" 3 4
 typedef __int64_t __darwin_blkcnt_t;
 typedef __int32_t __darwin_blksize_t;
 typedef __int32_t __darwin_dev_t;
@@ -132,8 +132,8 @@ typedef unsigned char __darwin_uuid_t[16];
 typedef char __darwin_uuid_string_t[37];
 
 
-# 1 "/usr/include/sys/_pthread/_pthread_types.h" 1 3 4
-# 57 "/usr/include/sys/_pthread/_pthread_types.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_types.h" 1 3 4
+# 57 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_types.h" 3 4
 struct __darwin_pthread_handler_rec {
  void (*__routine)(void *);
  void *__arg;
@@ -196,35 +196,43 @@ typedef struct _opaque_pthread_once_t __darwin_pthread_once_t;
 typedef struct _opaque_pthread_rwlock_t __darwin_pthread_rwlock_t;
 typedef struct _opaque_pthread_rwlockattr_t __darwin_pthread_rwlockattr_t;
 typedef struct _opaque_pthread_t *__darwin_pthread_t;
-# 81 "/usr/include/sys/_types.h" 2 3 4
-# 28 "/usr/include/_types.h" 2 3 4
-# 39 "/usr/include/_types.h" 3 4
+# 81 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types.h" 2 3 4
+# 28 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types.h" 2 3 4
+# 39 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types.h" 3 4
 typedef int __darwin_nl_item;
 typedef int __darwin_wctrans_t;
 
 typedef __uint32_t __darwin_wctype_t;
-# 68 "/usr/include/stdio.h" 2 3 4
+# 68 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 2 3 4
 
 
 
-# 1 "/usr/include/sys/_types/_va_list.h" 1 3 4
-# 31 "/usr/include/sys/_types/_va_list.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_va_list.h" 1 3 4
+# 31 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_va_list.h" 3 4
 typedef __darwin_va_list va_list;
-# 72 "/usr/include/stdio.h" 2 3 4
-# 1 "/usr/include/sys/_types/_size_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_size_t.h" 3 4
+# 72 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_size_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_size_t.h" 3 4
 typedef __darwin_size_t size_t;
-# 73 "/usr/include/stdio.h" 2 3 4
-# 1 "/usr/include/sys/_types/_null.h" 1 3 4
-# 74 "/usr/include/stdio.h" 2 3 4
+# 73 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_null.h" 1 3 4
+# 74 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 2 3 4
 
-# 1 "/usr/include/sys/stdio.h" 1 3 4
-# 39 "/usr/include/sys/stdio.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/stdio.h" 1 3 4
+# 39 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/stdio.h" 3 4
 int renameat(int, const char *, int, const char *) __attribute__((availability(macosx,introduced=10.10)));
-# 76 "/usr/include/stdio.h" 2 3 4
+
+
+
+
+
+
+int renamex_np(const char *, const char *, unsigned int) __attribute__((availability(macosx,introduced=10.12))) __attribute__((availability(ios,introduced=10.0))) __attribute__((availability(tvos,introduced=10.0))) __attribute__((availability(watchos,introduced=3.0)));
+int renameatx_np(int, const char *, int, const char *, unsigned int) __attribute__((availability(macosx,introduced=10.12))) __attribute__((availability(ios,introduced=10.0))) __attribute__((availability(tvos,introduced=10.0))) __attribute__((availability(watchos,introduced=3.0)));
+# 76 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 2 3 4
 
 typedef __darwin_off_t fpos_t;
-# 88 "/usr/include/stdio.h" 3 4
+# 88 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 3 4
 struct __sbuf {
  unsigned char *_base;
  int _size;
@@ -232,7 +240,7 @@ struct __sbuf {
 
 
 struct __sFILEX;
-# 122 "/usr/include/stdio.h" 3 4
+# 122 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 3 4
 typedef struct __sFILE {
  unsigned char *_p;
  int _r;
@@ -244,10 +252,10 @@ typedef struct __sFILE {
 
 
  void *_cookie;
- int (*_close)(void *);
- int (*_read) (void *, char *, int);
- fpos_t (*_seek) (void *, fpos_t, int);
- int (*_write)(void *, const char *, int);
+ int (* _Nullable _close)(void *);
+ int (* _Nullable _read) (void *, char *, int);
+ fpos_t (* _Nullable _seek) (void *, fpos_t, int);
+ int (* _Nullable _write)(void *, const char *, int);
 
 
  struct __sbuf _ub;
@@ -270,7 +278,7 @@ typedef struct __sFILE {
 extern FILE *__stdinp;
 extern FILE *__stdoutp;
 extern FILE *__stderrp;
-# 231 "/usr/include/stdio.h" 3 4
+# 231 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 3 4
 void clearerr(FILE *);
 int fclose(FILE *);
 int feof(FILE *);
@@ -282,19 +290,19 @@ char *fgets(char * restrict, int, FILE *);
 
 
 
-FILE *fopen(const char * restrict, const char * restrict) __asm("_" "fopen" );
+FILE *fopen(const char * restrict __filename, const char * restrict __mode) __asm("_" "fopen" );
 
 int fprintf(FILE * restrict, const char * restrict, ...) __attribute__((__format__ (__printf__, 2, 3)));
 int fputc(int, FILE *);
 int fputs(const char * restrict, FILE * restrict) __asm("_" "fputs" );
-size_t fread(void * restrict, size_t, size_t, FILE * restrict);
+size_t fread(void * restrict __ptr, size_t __size, size_t __nitems, FILE * restrict __stream);
 FILE *freopen(const char * restrict, const char * restrict,
                  FILE * restrict) __asm("_" "freopen" );
 int fscanf(FILE * restrict, const char * restrict, ...) __attribute__((__format__ (__scanf__, 2, 3)));
 int fseek(FILE *, long, int);
 int fsetpos(FILE *, const fpos_t *);
 long ftell(FILE *);
-size_t fwrite(const void * restrict, size_t, size_t, FILE * restrict) __asm("_" "fwrite" );
+size_t fwrite(const void * restrict __ptr, size_t __size, size_t __nitems, FILE * restrict __stream) __asm("_" "fwrite" );
 int getc(FILE *);
 int getchar(void);
 char *gets(char *);
@@ -304,15 +312,16 @@ int putc(int, FILE *);
 int putchar(int);
 int puts(const char *);
 int remove(const char *);
-int rename (const char *, const char *);
+int rename (const char *__old, const char *__new);
 void rewind(FILE *);
 int scanf(const char * restrict, ...) __attribute__((__format__ (__scanf__, 1, 2)));
 void setbuf(FILE * restrict, char * restrict);
 int setvbuf(FILE * restrict, char * restrict, int, size_t);
-int sprintf(char * restrict, const char * restrict, ...) __attribute__((__format__ (__printf__, 2, 3)));
+int sprintf(char * restrict, const char * restrict, ...) __attribute__((__format__ (__printf__, 2, 3))) __attribute__((__availability__(swift, unavailable, message="Use snprintf instead.")));
 int sscanf(const char * restrict, const char * restrict, ...) __attribute__((__format__ (__scanf__, 2, 3)));
 FILE *tmpfile(void);
 
+__attribute__((__availability__(swift, unavailable, message="Use mkstemp(3) instead.")))
 
 __attribute__((deprecated("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of tmpnam(3), it is highly recommended that you use mkstemp(3) instead.")))
 
@@ -320,8 +329,8 @@ char *tmpnam(char *);
 int ungetc(int, FILE *);
 int vfprintf(FILE * restrict, const char * restrict, va_list) __attribute__((__format__ (__printf__, 2, 0)));
 int vprintf(const char * restrict, va_list) __attribute__((__format__ (__printf__, 1, 0)));
-int vsprintf(char * restrict, const char * restrict, va_list) __attribute__((__format__ (__printf__, 2, 0)));
-# 296 "/usr/include/stdio.h" 3 4
+int vsprintf(char * restrict, const char * restrict, va_list) __attribute__((__format__ (__printf__, 2, 0))) __attribute__((__availability__(swift, unavailable, message="Use vsnprintf instead.")));
+# 297 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 3 4
 char *ctermid(char *);
 
 
@@ -331,24 +340,24 @@ char *ctermid(char *);
 FILE *fdopen(int, const char *) __asm("_" "fdopen" );
 
 int fileno(FILE *);
-# 315 "/usr/include/stdio.h" 3 4
-int pclose(FILE *);
+# 321 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 3 4
+int pclose(FILE *) __attribute__((__availability__(swift, unavailable, message="Use posix_spawn APIs or NSTask instead.")));
 
 
 
-FILE *popen(const char *, const char *) __asm("_" "popen" );
-# 337 "/usr/include/stdio.h" 3 4
+FILE *popen(const char *, const char *) __asm("_" "popen" ) __attribute__((__availability__(swift, unavailable, message="Use posix_spawn APIs or NSTask instead.")));
+# 342 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 3 4
 int __srget(FILE *);
 int __svfscanf(FILE *, const char *, va_list) __attribute__((__format__ (__scanf__, 2, 0)));
 int __swbuf(int, FILE *);
-# 348 "/usr/include/stdio.h" 3 4
+# 353 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 3 4
 inline __attribute__ ((__always_inline__)) int __sputc(int _c, FILE *_p) {
  if (--_p->_w >= 0 || (_p->_w >= _p->_lbfsize && (char)_c != '\n'))
   return (*_p->_p++ = _c);
  else
   return (__swbuf(_c, _p));
 }
-# 374 "/usr/include/stdio.h" 3 4
+# 379 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 3 4
 void flockfile(FILE *);
 int ftrylockfile(FILE *);
 void funlockfile(FILE *);
@@ -363,41 +372,42 @@ int getw(FILE *);
 int putw(int, FILE *);
 
 
+__attribute__((__availability__(swift, unavailable, message="Use mkstemp(3) instead.")))
 
 __attribute__((deprecated("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of tempnam(3), it is highly recommended that you use mkstemp(3) instead.")))
 
-char *tempnam(const char *, const char *) __asm("_" "tempnam" );
-# 411 "/usr/include/stdio.h" 3 4
-# 1 "/usr/include/sys/_types/_off_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_off_t.h" 3 4
+char *tempnam(const char *__dir, const char *__prefix) __asm("_" "tempnam" );
+# 417 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_off_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_off_t.h" 3 4
 typedef __darwin_off_t off_t;
-# 412 "/usr/include/stdio.h" 2 3 4
+# 418 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 2 3 4
 
 
-int fseeko(FILE *, off_t, int);
-off_t ftello(FILE *);
+int fseeko(FILE * __stream, off_t __offset, int __whence);
+off_t ftello(FILE * __stream);
 
 
 
 
 
-int snprintf(char * restrict, size_t, const char * restrict, ...) __attribute__((__format__ (__printf__, 3, 4)));
-int vfscanf(FILE * restrict, const char * restrict, va_list) __attribute__((__format__ (__scanf__, 2, 0)));
-int vscanf(const char * restrict, va_list) __attribute__((__format__ (__scanf__, 1, 0)));
-int vsnprintf(char * restrict, size_t, const char * restrict, va_list) __attribute__((__format__ (__printf__, 3, 0)));
-int vsscanf(const char * restrict, const char * restrict, va_list) __attribute__((__format__ (__scanf__, 2, 0)));
-# 436 "/usr/include/stdio.h" 3 4
-# 1 "/usr/include/sys/_types/_ssize_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_ssize_t.h" 3 4
+int snprintf(char * restrict __str, size_t __size, const char * restrict __format, ...) __attribute__((__format__ (__printf__, 3, 4)));
+int vfscanf(FILE * restrict __stream, const char * restrict __format, va_list) __attribute__((__format__ (__scanf__, 2, 0)));
+int vscanf(const char * restrict __format, va_list) __attribute__((__format__ (__scanf__, 1, 0)));
+int vsnprintf(char * restrict __str, size_t __size, const char * restrict __format, va_list) __attribute__((__format__ (__printf__, 3, 0)));
+int vsscanf(const char * restrict __str, const char * restrict __format, va_list) __attribute__((__format__ (__scanf__, 2, 0)));
+# 442 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ssize_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ssize_t.h" 3 4
 typedef __darwin_ssize_t ssize_t;
-# 437 "/usr/include/stdio.h" 2 3 4
+# 443 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 2 3 4
 
 
 int dprintf(int, const char * restrict, ...) __attribute__((__format__ (__printf__, 2, 3))) __attribute__((availability(macosx,introduced=10.7)));
 int vdprintf(int, const char * restrict, va_list) __attribute__((__format__ (__printf__, 2, 0))) __attribute__((availability(macosx,introduced=10.7)));
-ssize_t getdelim(char ** restrict, size_t * restrict, int, FILE * restrict) __attribute__((availability(macosx,introduced=10.7)));
-ssize_t getline(char ** restrict, size_t * restrict, FILE * restrict) __attribute__((availability(macosx,introduced=10.7)));
-# 452 "/usr/include/stdio.h" 3 4
+ssize_t getdelim(char ** restrict __linep, size_t * restrict __linecapp, int __delimiter, FILE * restrict __stream) __attribute__((availability(macosx,introduced=10.7)));
+ssize_t getline(char ** restrict __linep, size_t * restrict __linecapp, FILE * restrict __stream) __attribute__((availability(macosx,introduced=10.7)));
+# 458 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 3 4
 extern const int sys_nerr;
 extern const char *const sys_errlist[];
 
@@ -416,19 +426,19 @@ FILE *zopen(const char *, const char *, int);
 
 
 FILE *funopen(const void *,
-                 int (*)(void *, char *, int),
-                 int (*)(void *, const char *, int),
-                 fpos_t (*)(void *, fpos_t, int),
-                 int (*)(void *));
-# 492 "/usr/include/stdio.h" 3 4
-# 1 "/usr/include/secure/_stdio.h" 1 3 4
-# 31 "/usr/include/secure/_stdio.h" 3 4
-# 1 "/usr/include/secure/_common.h" 1 3 4
-# 32 "/usr/include/secure/_stdio.h" 2 3 4
-# 42 "/usr/include/secure/_stdio.h" 3 4
+                 int (* _Nullable)(void *, char *, int),
+                 int (* _Nullable)(void *, const char *, int),
+                 fpos_t (* _Nullable)(void *, fpos_t, int),
+                 int (* _Nullable)(void *));
+# 498 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/secure/_stdio.h" 1 3 4
+# 31 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/secure/_stdio.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/secure/_common.h" 1 3 4
+# 32 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/secure/_stdio.h" 2 3 4
+# 42 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/secure/_stdio.h" 3 4
 extern int __sprintf_chk (char * restrict, int, size_t,
      const char * restrict, ...);
-# 52 "/usr/include/secure/_stdio.h" 3 4
+# 52 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/secure/_stdio.h" 3 4
 extern int __snprintf_chk (char * restrict, size_t, int, size_t,
       const char * restrict, ...);
 
@@ -449,12 +459,12 @@ extern int __vsprintf_chk (char * restrict, int, size_t,
 
 extern int __vsnprintf_chk (char * restrict, size_t, int, size_t,
        const char * restrict, va_list);
-# 493 "/usr/include/stdio.h" 2 3 4
+# 499 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdio.h" 2 3 4
 # 4 "./util.c" 2
-# 1 "/usr/include/stdlib.h" 1 3 4
-# 65 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/include/sys/wait.h" 1 3 4
-# 79 "/usr/include/sys/wait.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h" 1 3 4
+# 65 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/wait.h" 1 3 4
+# 79 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/wait.h" 3 4
 typedef enum {
  P_ALL,
  P_PID,
@@ -466,19 +476,19 @@ typedef enum {
 
 
 
-# 1 "/usr/include/sys/_types/_pid_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_pid_t.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_pid_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_pid_t.h" 3 4
 typedef __darwin_pid_t pid_t;
-# 90 "/usr/include/sys/wait.h" 2 3 4
-# 1 "/usr/include/sys/_types/_id_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_id_t.h" 3 4
+# 90 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/wait.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_id_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_id_t.h" 3 4
 typedef __darwin_id_t id_t;
-# 91 "/usr/include/sys/wait.h" 2 3 4
-# 109 "/usr/include/sys/wait.h" 3 4
-# 1 "/usr/include/sys/signal.h" 1 3 4
-# 73 "/usr/include/sys/signal.h" 3 4
-# 1 "/usr/include/sys/appleapiopts.h" 1 3 4
-# 74 "/usr/include/sys/signal.h" 2 3 4
+# 91 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/wait.h" 2 3 4
+# 109 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/wait.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 1 3 4
+# 73 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/appleapiopts.h" 1 3 4
+# 74 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 2 3 4
 
 
 
@@ -487,20 +497,20 @@ typedef __darwin_id_t id_t;
 
 
 
-# 1 "/usr/include/machine/signal.h" 1 3 4
-# 32 "/usr/include/machine/signal.h" 3 4
-# 1 "/usr/include/i386/signal.h" 1 3 4
-# 39 "/usr/include/i386/signal.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/signal.h" 1 3 4
+# 32 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/signal.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/signal.h" 1 3 4
+# 39 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/signal.h" 3 4
 typedef int sig_atomic_t;
-# 33 "/usr/include/machine/signal.h" 2 3 4
-# 83 "/usr/include/sys/signal.h" 2 3 4
-# 146 "/usr/include/sys/signal.h" 3 4
-# 1 "/usr/include/machine/_mcontext.h" 1 3 4
-# 29 "/usr/include/machine/_mcontext.h" 3 4
-# 1 "/usr/include/i386/_mcontext.h" 1 3 4
-# 33 "/usr/include/i386/_mcontext.h" 3 4
-# 1 "/usr/include/mach/i386/_structs.h" 1 3 4
-# 43 "/usr/include/mach/i386/_structs.h" 3 4
+# 33 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/signal.h" 2 3 4
+# 83 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 2 3 4
+# 146 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/_mcontext.h" 1 3 4
+# 29 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/_mcontext.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_mcontext.h" 1 3 4
+# 33 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_mcontext.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h" 1 3 4
+# 43 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h" 3 4
 struct __darwin_i386_thread_state
 {
     unsigned int __eax;
@@ -520,7 +530,7 @@ struct __darwin_i386_thread_state
     unsigned int __fs;
     unsigned int __gs;
 };
-# 89 "/usr/include/mach/i386/_structs.h" 3 4
+# 89 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h" 3 4
 struct __darwin_fp_control
 {
     unsigned short __invalid :1,
@@ -547,7 +557,7 @@ struct __darwin_fp_control
       :3;
 };
 typedef struct __darwin_fp_control __darwin_fp_control_t;
-# 147 "/usr/include/mach/i386/_structs.h" 3 4
+# 147 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h" 3 4
 struct __darwin_fp_status
 {
     unsigned short __invalid :1,
@@ -566,18 +576,18 @@ struct __darwin_fp_status
     __busy :1;
 };
 typedef struct __darwin_fp_status __darwin_fp_status_t;
-# 191 "/usr/include/mach/i386/_structs.h" 3 4
+# 191 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h" 3 4
 struct __darwin_mmst_reg
 {
  char __mmst_reg[10];
  char __mmst_rsrv[6];
 };
-# 210 "/usr/include/mach/i386/_structs.h" 3 4
+# 210 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h" 3 4
 struct __darwin_xmm_reg
 {
  char __xmm_reg[16];
 };
-# 232 "/usr/include/mach/i386/_structs.h" 3 4
+# 232 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h" 3 4
 struct __darwin_i386_float_state
 {
  int __fpu_reserved[2];
@@ -659,7 +669,7 @@ struct __darwin_i386_avx_state
  struct __darwin_xmm_reg __fpu_ymmh6;
  struct __darwin_xmm_reg __fpu_ymmh7;
 };
-# 402 "/usr/include/mach/i386/_structs.h" 3 4
+# 402 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h" 3 4
 struct __darwin_i386_exception_state
 {
  __uint16_t __trapno;
@@ -667,7 +677,7 @@ struct __darwin_i386_exception_state
  __uint32_t __err;
  __uint32_t __faultvaddr;
 };
-# 422 "/usr/include/mach/i386/_structs.h" 3 4
+# 422 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h" 3 4
 struct __darwin_x86_debug_state32
 {
  unsigned int __dr0;
@@ -679,7 +689,7 @@ struct __darwin_x86_debug_state32
  unsigned int __dr6;
  unsigned int __dr7;
 };
-# 454 "/usr/include/mach/i386/_structs.h" 3 4
+# 454 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h" 3 4
 struct __darwin_x86_thread_state64
 {
  __uint64_t __rax;
@@ -704,7 +714,7 @@ struct __darwin_x86_thread_state64
  __uint64_t __fs;
  __uint64_t __gs;
 };
-# 509 "/usr/include/mach/i386/_structs.h" 3 4
+# 509 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h" 3 4
 struct __darwin_x86_float_state64
 {
  int __fpu_reserved[2];
@@ -822,7 +832,7 @@ struct __darwin_x86_avx_state64
  struct __darwin_xmm_reg __fpu_ymmh14;
  struct __darwin_xmm_reg __fpu_ymmh15;
 };
-# 751 "/usr/include/mach/i386/_structs.h" 3 4
+# 751 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h" 3 4
 struct __darwin_x86_exception_state64
 {
     __uint16_t __trapno;
@@ -830,7 +840,7 @@ struct __darwin_x86_exception_state64
     __uint32_t __err;
     __uint64_t __faultvaddr;
 };
-# 771 "/usr/include/mach/i386/_structs.h" 3 4
+# 771 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/mach/i386/_structs.h" 3 4
 struct __darwin_x86_debug_state64
 {
  __uint64_t __dr0;
@@ -842,7 +852,7 @@ struct __darwin_x86_debug_state64
  __uint64_t __dr6;
  __uint64_t __dr7;
 };
-# 34 "/usr/include/i386/_mcontext.h" 2 3 4
+# 34 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_mcontext.h" 2 3 4
 
 
 
@@ -861,7 +871,7 @@ struct __darwin_mcontext_avx32
  struct __darwin_i386_thread_state __ss;
  struct __darwin_i386_avx_state __fs;
 };
-# 76 "/usr/include/i386/_mcontext.h" 3 4
+# 76 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_mcontext.h" 3 4
 struct __darwin_mcontext64
 {
  struct __darwin_x86_exception_state64 __es;
@@ -876,18 +886,18 @@ struct __darwin_mcontext_avx64
  struct __darwin_x86_thread_state64 __ss;
  struct __darwin_x86_avx_state64 __fs;
 };
-# 115 "/usr/include/i386/_mcontext.h" 3 4
+# 115 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_mcontext.h" 3 4
 typedef struct __darwin_mcontext64 *mcontext_t;
-# 30 "/usr/include/machine/_mcontext.h" 2 3 4
-# 147 "/usr/include/sys/signal.h" 2 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/_mcontext.h" 2 3 4
+# 147 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 2 3 4
 
-# 1 "/usr/include/sys/_pthread/_pthread_attr_t.h" 1 3 4
-# 30 "/usr/include/sys/_pthread/_pthread_attr_t.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_attr_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_pthread/_pthread_attr_t.h" 3 4
 typedef __darwin_pthread_attr_t pthread_attr_t;
-# 149 "/usr/include/sys/signal.h" 2 3 4
+# 149 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 2 3 4
 
-# 1 "/usr/include/sys/_types/_sigaltstack.h" 1 3 4
-# 36 "/usr/include/sys/_types/_sigaltstack.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_sigaltstack.h" 1 3 4
+# 36 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_sigaltstack.h" 3 4
 struct __darwin_sigaltstack
 {
  void *ss_sp;
@@ -895,9 +905,9 @@ struct __darwin_sigaltstack
  int ss_flags;
 };
 typedef struct __darwin_sigaltstack stack_t;
-# 151 "/usr/include/sys/signal.h" 2 3 4
-# 1 "/usr/include/sys/_types/_ucontext.h" 1 3 4
-# 34 "/usr/include/sys/_types/_ucontext.h" 3 4
+# 151 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ucontext.h" 1 3 4
+# 34 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ucontext.h" 3 4
 struct __darwin_ucontext
 {
  int uc_onstack;
@@ -913,18 +923,18 @@ struct __darwin_ucontext
 
 
 typedef struct __darwin_ucontext ucontext_t;
-# 152 "/usr/include/sys/signal.h" 2 3 4
+# 152 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 2 3 4
 
 
-# 1 "/usr/include/sys/_types/_sigset_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_sigset_t.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_sigset_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_sigset_t.h" 3 4
 typedef __darwin_sigset_t sigset_t;
-# 155 "/usr/include/sys/signal.h" 2 3 4
+# 155 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 2 3 4
 
-# 1 "/usr/include/sys/_types/_uid_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_uid_t.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_uid_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_uid_t.h" 3 4
 typedef __darwin_uid_t uid_t;
-# 157 "/usr/include/sys/signal.h" 2 3 4
+# 157 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 2 3 4
 
 union sigval {
 
@@ -957,7 +967,7 @@ typedef struct __siginfo {
  long si_band;
  unsigned long __pad[7];
 } siginfo_t;
-# 269 "/usr/include/sys/signal.h" 3 4
+# 269 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 3 4
 union __sigaction_u {
  void (*__sa_handler)(int);
  void (*__sa_sigaction)(int, struct __siginfo *,
@@ -980,61 +990,61 @@ struct sigaction {
  sigset_t sa_mask;
  int sa_flags;
 };
-# 331 "/usr/include/sys/signal.h" 3 4
+# 331 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 3 4
 typedef void (*sig_t)(int);
-# 348 "/usr/include/sys/signal.h" 3 4
+# 348 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 3 4
 struct sigvec {
  void (*sv_handler)(int);
  int sv_mask;
  int sv_flags;
 };
-# 367 "/usr/include/sys/signal.h" 3 4
+# 367 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 3 4
 struct sigstack {
  char *ss_sp;
  int ss_onstack;
 };
-# 390 "/usr/include/sys/signal.h" 3 4
+# 390 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/signal.h" 3 4
 void (*signal(int, void (*)(int)))(int);
-# 110 "/usr/include/sys/wait.h" 2 3 4
-# 1 "/usr/include/sys/resource.h" 1 3 4
-# 72 "/usr/include/sys/resource.h" 3 4
+# 110 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/wait.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/resource.h" 1 3 4
+# 72 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/resource.h" 3 4
 # 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stdint.h" 1 3 4
 # 63 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stdint.h" 3 4
-# 1 "/usr/include/stdint.h" 1 3 4
-# 18 "/usr/include/stdint.h" 3 4
-# 1 "/usr/include/sys/_types/_int8_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_int8_t.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 1 3 4
+# 18 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int8_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int8_t.h" 3 4
 typedef signed char int8_t;
-# 19 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/sys/_types/_int16_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_int16_t.h" 3 4
+# 19 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int16_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int16_t.h" 3 4
 typedef short int16_t;
-# 20 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/sys/_types/_int32_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_int32_t.h" 3 4
+# 20 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int32_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int32_t.h" 3 4
 typedef int int32_t;
-# 21 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/sys/_types/_int64_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_int64_t.h" 3 4
+# 21 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int64_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_int64_t.h" 3 4
 typedef long long int64_t;
-# 22 "/usr/include/stdint.h" 2 3 4
+# 22 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 2 3 4
 
-# 1 "/usr/include/_types/_uint8_t.h" 1 3 4
-# 31 "/usr/include/_types/_uint8_t.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint8_t.h" 1 3 4
+# 31 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint8_t.h" 3 4
 typedef unsigned char uint8_t;
-# 24 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/_types/_uint16_t.h" 1 3 4
-# 31 "/usr/include/_types/_uint16_t.h" 3 4
+# 24 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint16_t.h" 1 3 4
+# 31 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint16_t.h" 3 4
 typedef unsigned short uint16_t;
-# 25 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/_types/_uint32_t.h" 1 3 4
-# 31 "/usr/include/_types/_uint32_t.h" 3 4
+# 25 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint32_t.h" 1 3 4
+# 31 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint32_t.h" 3 4
 typedef unsigned int uint32_t;
-# 26 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/_types/_uint64_t.h" 1 3 4
-# 31 "/usr/include/_types/_uint64_t.h" 3 4
+# 26 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint64_t.h" 1 3 4
+# 31 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uint64_t.h" 3 4
 typedef unsigned long long uint64_t;
-# 27 "/usr/include/stdint.h" 2 3 4
+# 27 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 2 3 4
 
 
 typedef int8_t int_least8_t;
@@ -1062,27 +1072,27 @@ typedef uint64_t uint_fast64_t;
 
 
 
-# 1 "/usr/include/sys/_types/_intptr_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_intptr_t.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_intptr_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_intptr_t.h" 3 4
 typedef __darwin_intptr_t intptr_t;
-# 54 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/sys/_types/_uintptr_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_uintptr_t.h" 3 4
+# 54 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_uintptr_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_uintptr_t.h" 3 4
 typedef unsigned long uintptr_t;
-# 55 "/usr/include/stdint.h" 2 3 4
+# 55 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 2 3 4
 
 
 
-# 1 "/usr/include/_types/_intmax_t.h" 1 3 4
-# 32 "/usr/include/_types/_intmax_t.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_intmax_t.h" 1 3 4
+# 32 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_intmax_t.h" 3 4
 typedef long int intmax_t;
-# 59 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/_types/_uintmax_t.h" 1 3 4
-# 32 "/usr/include/_types/_uintmax_t.h" 3 4
+# 59 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uintmax_t.h" 1 3 4
+# 32 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/_types/_uintmax_t.h" 3 4
 typedef long unsigned int uintmax_t;
-# 60 "/usr/include/stdint.h" 2 3 4
+# 60 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdint.h" 2 3 4
 # 64 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stdint.h" 2 3 4
-# 73 "/usr/include/sys/resource.h" 2 3 4
+# 73 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/resource.h" 2 3 4
 
 
 
@@ -1090,14 +1100,14 @@ typedef long unsigned int uintmax_t;
 
 
 
-# 1 "/usr/include/sys/_types/_timeval.h" 1 3 4
-# 30 "/usr/include/sys/_types/_timeval.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_timeval.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_timeval.h" 3 4
 struct timeval
 {
  __darwin_time_t tv_sec;
  __darwin_suseconds_t tv_usec;
 };
-# 81 "/usr/include/sys/resource.h" 2 3 4
+# 81 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/resource.h" 2 3 4
 
 
 
@@ -1107,11 +1117,11 @@ struct timeval
 
 
 typedef __uint64_t rlim_t;
-# 152 "/usr/include/sys/resource.h" 3 4
+# 152 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/resource.h" 3 4
 struct rusage {
  struct timeval ru_utime;
  struct timeval ru_stime;
-# 163 "/usr/include/sys/resource.h" 3 4
+# 163 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/resource.h" 3 4
  long ru_maxrss;
 
  long ru_ixrss;
@@ -1130,7 +1140,7 @@ struct rusage {
 
 
 };
-# 192 "/usr/include/sys/resource.h" 3 4
+# 192 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/resource.h" 3 4
 typedef void *rusage_info_t;
 
 struct rusage_info_v0 {
@@ -1221,17 +1231,17 @@ struct rusage_info_v3 {
 };
 
 typedef struct rusage_info_v3 rusage_info_current;
-# 325 "/usr/include/sys/resource.h" 3 4
+# 325 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/resource.h" 3 4
 struct rlimit {
  rlim_t rlim_cur;
  rlim_t rlim_max;
 };
-# 353 "/usr/include/sys/resource.h" 3 4
+# 353 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/resource.h" 3 4
 struct proc_rlimit_control_wakeupmon {
  uint32_t wm_flags;
  int32_t wm_rate;
 };
-# 383 "/usr/include/sys/resource.h" 3 4
+# 385 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/resource.h" 3 4
 int getpriority(int, id_t);
 
 int getiopolicy_np(int, int) __attribute__((availability(macosx,introduced=10.5)));
@@ -1243,18 +1253,18 @@ int setpriority(int, id_t, int);
 int setiopolicy_np(int, int, int) __attribute__((availability(macosx,introduced=10.5)));
 
 int setrlimit(int, const struct rlimit *) __asm("_" "setrlimit" );
-# 111 "/usr/include/sys/wait.h" 2 3 4
-# 186 "/usr/include/sys/wait.h" 3 4
-# 1 "/usr/include/machine/endian.h" 1 3 4
-# 35 "/usr/include/machine/endian.h" 3 4
-# 1 "/usr/include/i386/endian.h" 1 3 4
-# 99 "/usr/include/i386/endian.h" 3 4
-# 1 "/usr/include/sys/_endian.h" 1 3 4
-# 130 "/usr/include/sys/_endian.h" 3 4
-# 1 "/usr/include/libkern/_OSByteOrder.h" 1 3 4
-# 66 "/usr/include/libkern/_OSByteOrder.h" 3 4
-# 1 "/usr/include/libkern/i386/_OSByteOrder.h" 1 3 4
-# 44 "/usr/include/libkern/i386/_OSByteOrder.h" 3 4
+# 111 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/wait.h" 2 3 4
+# 186 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/wait.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/endian.h" 1 3 4
+# 35 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/endian.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/endian.h" 1 3 4
+# 99 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/endian.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_endian.h" 1 3 4
+# 130 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_endian.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libkern/_OSByteOrder.h" 1 3 4
+# 66 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libkern/_OSByteOrder.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libkern/i386/_OSByteOrder.h" 1 3 4
+# 44 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libkern/i386/_OSByteOrder.h" 3 4
 static inline
 __uint16_t
 _OSSwapInt16(
@@ -1287,11 +1297,11 @@ _OSSwapInt64(
 {
     return __builtin_bswap64(_data);
 }
-# 67 "/usr/include/libkern/_OSByteOrder.h" 2 3 4
-# 131 "/usr/include/sys/_endian.h" 2 3 4
-# 100 "/usr/include/i386/endian.h" 2 3 4
-# 36 "/usr/include/machine/endian.h" 2 3 4
-# 187 "/usr/include/sys/wait.h" 2 3 4
+# 67 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libkern/_OSByteOrder.h" 2 3 4
+# 131 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_endian.h" 2 3 4
+# 100 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/endian.h" 2 3 4
+# 36 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/endian.h" 2 3 4
+# 187 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/wait.h" 2 3 4
 
 
 
@@ -1336,7 +1346,7 @@ union wait {
 
  } w_S;
 };
-# 248 "/usr/include/sys/wait.h" 3 4
+# 248 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/wait.h" 3 4
 pid_t wait(int *) __asm("_" "wait" );
 pid_t waitpid(pid_t, int *, int) __asm("_" "waitpid" );
 
@@ -1345,12 +1355,12 @@ int waitid(idtype_t, id_t, siginfo_t *, int) __asm("_" "waitid" );
 
 pid_t wait3(int *, int, struct rusage *);
 pid_t wait4(pid_t, int *, int, struct rusage *);
-# 66 "/usr/include/stdlib.h" 2 3 4
+# 66 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h" 2 3 4
 
-# 1 "/usr/include/alloca.h" 1 3 4
-# 32 "/usr/include/alloca.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/alloca.h" 1 3 4
+# 32 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/alloca.h" 3 4
 void *alloca(size_t);
-# 68 "/usr/include/stdlib.h" 2 3 4
+# 68 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h" 2 3 4
 
 
 
@@ -1359,20 +1369,20 @@ void *alloca(size_t);
 
 
 
-# 1 "/usr/include/sys/_types/_ct_rune_t.h" 1 3 4
-# 31 "/usr/include/sys/_types/_ct_rune_t.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ct_rune_t.h" 1 3 4
+# 31 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_ct_rune_t.h" 3 4
 typedef __darwin_ct_rune_t ct_rune_t;
-# 77 "/usr/include/stdlib.h" 2 3 4
-# 1 "/usr/include/sys/_types/_rune_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_rune_t.h" 3 4
+# 77 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_rune_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_rune_t.h" 3 4
 typedef __darwin_rune_t rune_t;
-# 78 "/usr/include/stdlib.h" 2 3 4
+# 78 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h" 2 3 4
 
 
-# 1 "/usr/include/sys/_types/_wchar_t.h" 1 3 4
-# 33 "/usr/include/sys/_types/_wchar_t.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_wchar_t.h" 1 3 4
+# 33 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_wchar_t.h" 3 4
 typedef __darwin_wchar_t wchar_t;
-# 81 "/usr/include/stdlib.h" 2 3 4
+# 81 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h" 2 3 4
 
 typedef struct {
  int quot;
@@ -1389,12 +1399,12 @@ typedef struct {
  long long quot;
  long long rem;
 } lldiv_t;
-# 117 "/usr/include/stdlib.h" 3 4
+# 117 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h" 3 4
 extern int __mb_cur_max;
-# 128 "/usr/include/stdlib.h" 3 4
+# 128 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h" 3 4
 void abort(void) __attribute__((noreturn));
 int abs(int) __attribute__((const));
-int atexit(void (*)(void));
+int atexit(void (* _Nonnull)(void));
 double atof(const char *);
 int atoi(const char *);
 long atol(const char *);
@@ -1402,9 +1412,9 @@ long atol(const char *);
 long long
   atoll(const char *);
 
-void *bsearch(const void *, const void *, size_t,
-     size_t, int (*)(const void *, const void *));
-void *calloc(size_t, size_t);
+void *bsearch(const void *__key, const void *__base, size_t __nel,
+     size_t __width, int (* _Nonnull __compar)(const void *, const void *));
+void *calloc(size_t __count, size_t __size) __attribute__((__warn_unused_result__));
 div_t div(int, int) __attribute__((const));
 void exit(int) __attribute__((noreturn));
 void free(void *);
@@ -1416,32 +1426,38 @@ long long
   llabs(long long);
 lldiv_t lldiv(long long, long long);
 
-void *malloc(size_t);
-int mblen(const char *, size_t);
+void *malloc(size_t __size) __attribute__((__warn_unused_result__));
+int mblen(const char *__s, size_t __n);
 size_t mbstowcs(wchar_t * restrict , const char * restrict, size_t);
 int mbtowc(wchar_t * restrict, const char * restrict, size_t);
-int posix_memalign(void **, size_t, size_t) __attribute__((availability(macosx,introduced=10.6)));
-void qsort(void *, size_t, size_t,
-     int (*)(const void *, const void *));
-int rand(void);
-void *realloc(void *, size_t);
-void srand(unsigned);
+int posix_memalign(void **__memptr, size_t __alignment, size_t __size) __attribute__((availability(macosx,introduced=10.6)));
+void qsort(void *__base, size_t __nel, size_t __width,
+     int (* _Nonnull __compar)(const void *, const void *));
+int rand(void) __attribute__((__availability__(swift, unavailable, message="Use arc4random instead.")));
+void *realloc(void *__ptr, size_t __size) __attribute__((__warn_unused_result__));
+void srand(unsigned) __attribute__((__availability__(swift, unavailable, message="Use arc4random instead.")));
 double strtod(const char *, char **) __asm("_" "strtod" );
 float strtof(const char *, char **) __asm("_" "strtof" );
-long strtol(const char *, char **, int);
+long strtol(const char *__str, char **__endptr, int __base);
 long double
   strtold(const char *, char **);
 
 long long
-  strtoll(const char *, char **, int);
+  strtoll(const char *__str, char **__endptr, int __base);
 
 unsigned long
-  strtoul(const char *, char **, int);
+  strtoul(const char *__str, char **__endptr, int __base);
 
 unsigned long long
-  strtoull(const char *, char **, int);
+  strtoull(const char *__str, char **__endptr, int __base);
+# 184 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h" 3 4
+__attribute__((__availability__(swift, unavailable, message="Use posix_spawn APIs or NSTask instead.")))
+__attribute__((availability(macosx,introduced=10.0)))
+__attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+int system(const char *) __asm("_" "system" );
 
-int system(const char *) __asm("_" "system" ) __attribute__((availability(macosx,introduced=10.0))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+
+
 size_t wcstombs(char * restrict, const wchar_t * restrict, size_t);
 int wctomb(char *, wchar_t);
 
@@ -1460,19 +1476,19 @@ char *initstate(unsigned, char *, size_t);
 
 
 
-long jrand48(unsigned short[3]);
+long jrand48(unsigned short[3]) __attribute__((__availability__(swift, unavailable, message="Use arc4random instead.")));
 char *l64a(long);
 void lcong48(unsigned short[7]);
-long lrand48(void);
+long lrand48(void) __attribute__((__availability__(swift, unavailable, message="Use arc4random instead.")));
 char *mktemp(char *);
 int mkstemp(char *);
-long mrand48(void);
-long nrand48(unsigned short[3]);
+long mrand48(void) __attribute__((__availability__(swift, unavailable, message="Use arc4random instead.")));
+long nrand48(unsigned short[3]) __attribute__((__availability__(swift, unavailable, message="Use arc4random instead.")));
 int posix_openpt(int);
 char *ptsname(int);
 int putenv(char *) __asm("_" "putenv" );
-long random(void);
-int rand_r(unsigned *);
+long random(void) __attribute__((__availability__(swift, unavailable, message="Use arc4random instead.")));
+int rand_r(unsigned *) __attribute__((__availability__(swift, unavailable, message="Use arc4random instead.")));
 
 char *realpath(const char * restrict, char * restrict) __asm("_" "realpath" "$DARWIN_EXTSN");
 
@@ -1480,7 +1496,7 @@ char *realpath(const char * restrict, char * restrict) __asm("_" "realpath" "$DA
 
 unsigned short
  *seed48(unsigned short[3]);
-int setenv(const char *, const char *, int) __asm("_" "setenv" );
+int setenv(const char * __name, const char * __value, int __overwrite) __asm("_" "setenv" );
 
 void setkey(const char *) __asm("_" "setkey" );
 
@@ -1503,18 +1519,30 @@ int unsetenv(const char *) __asm("_" "unsetenv" );
 
 
 
-# 1 "/usr/include/machine/types.h" 1 3 4
-# 35 "/usr/include/machine/types.h" 3 4
-# 1 "/usr/include/i386/types.h" 1 3 4
-# 81 "/usr/include/i386/types.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/types.h" 1 3 4
+# 35 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/types.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/types.h" 1 3 4
+# 81 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/types.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int8_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int8_t.h" 3 4
 typedef unsigned char u_int8_t;
+# 82 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/types.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int16_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int16_t.h" 3 4
 typedef unsigned short u_int16_t;
+# 83 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/types.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int32_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int32_t.h" 3 4
 typedef unsigned int u_int32_t;
+# 84 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/types.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int64_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_u_int64_t.h" 3 4
 typedef unsigned long long u_int64_t;
+# 85 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/types.h" 2 3 4
 
 
 typedef int64_t register_t;
-# 97 "/usr/include/i386/types.h" 3 4
+# 97 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/types.h" 3 4
 typedef u_int64_t user_addr_t;
 typedef u_int64_t user_size_t;
 typedef int64_t user_ssize_t;
@@ -1530,28 +1558,33 @@ typedef int64_t user_off_t;
 
 
 typedef u_int64_t syscall_arg_t;
-# 36 "/usr/include/machine/types.h" 2 3 4
-# 239 "/usr/include/stdlib.h" 2 3 4
+# 36 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/types.h" 2 3 4
+# 252 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h" 2 3 4
 
-# 1 "/usr/include/sys/_types/_dev_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_dev_t.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_dev_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_dev_t.h" 3 4
 typedef __darwin_dev_t dev_t;
-# 241 "/usr/include/stdlib.h" 2 3 4
-# 1 "/usr/include/sys/_types/_mode_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_mode_t.h" 3 4
+# 254 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_mode_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_mode_t.h" 3 4
 typedef __darwin_mode_t mode_t;
-# 242 "/usr/include/stdlib.h" 2 3 4
+# 255 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/stdlib.h" 2 3 4
 
-u_int32_t arc4random(void);
-void arc4random_addrandom(unsigned char * , int );
-void arc4random_buf(void * , size_t ) __attribute__((availability(macosx,introduced=10.7)));
+
+uint32_t arc4random(void);
+void arc4random_addrandom(unsigned char * , int )
+    __attribute__((availability(macosx,introduced=10.0))) __attribute__((availability(macosx,deprecated=10.12,message="use arc4random_stir")))
+    __attribute__((availability(ios,introduced=2.0))) __attribute__((availability(ios,deprecated=10.0,message="use arc4random_stir")))
+    __attribute__((availability(tvos,introduced=2.0))) __attribute__((availability(tvos,deprecated=10.0,message="use arc4random_stir")))
+    __attribute__((availability(watchos,introduced=1.0))) __attribute__((availability(watchos,deprecated=3.0,message="use arc4random_stir")));
+void arc4random_buf(void * __buf, size_t __nbytes) __attribute__((availability(macosx,introduced=10.7)));
 void arc4random_stir(void);
-u_int32_t
-  arc4random_uniform(u_int32_t ) __attribute__((availability(macosx,introduced=10.7)));
+uint32_t
+  arc4random_uniform(uint32_t __upper_bound) __attribute__((availability(macosx,introduced=10.7)));
 
-int atexit_b(void (^)(void)) __attribute__((availability(macosx,introduced=10.6)));
-void *bsearch_b(const void *, const void *, size_t,
-     size_t, int (^)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+int atexit_b(void (^ _Nonnull)(void)) __attribute__((availability(macosx,introduced=10.6)));
+void *bsearch_b(const void *__key, const void *__base, size_t __nel,
+     size_t __width, int (^ _Nonnull __compar)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
 
 
 
@@ -1574,51 +1607,51 @@ int getloadavg(double [], int);
 const char
  *getprogname(void);
 
-int heapsort(void *, size_t, size_t,
-     int (*)(const void *, const void *));
+int heapsort(void *__base, size_t __nel, size_t __width,
+     int (* _Nonnull __compar)(const void *, const void *));
 
-int heapsort_b(void *, size_t, size_t,
-     int (^)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+int heapsort_b(void *__base, size_t __nel, size_t __width,
+     int (^ _Nonnull __compar)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
 
-int mergesort(void *, size_t, size_t,
-     int (*)(const void *, const void *));
+int mergesort(void *__base, size_t __nel, size_t __width,
+     int (* _Nonnull __compar)(const void *, const void *));
 
-int mergesort_b(void *, size_t, size_t,
-     int (^)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+int mergesort_b(void *__base, size_t __nel, size_t __width,
+     int (^ _Nonnull __compar)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
 
-void psort(void *, size_t, size_t,
-     int (*)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+void psort(void *__base, size_t __nel, size_t __width,
+     int (* _Nonnull __compar)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
 
-void psort_b(void *, size_t, size_t,
-     int (^)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+void psort_b(void *__base, size_t __nel, size_t __width,
+     int (^ _Nonnull __compar)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
 
-void psort_r(void *, size_t, size_t, void *,
-     int (*)(void *, const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+void psort_r(void *__base, size_t __nel, size_t __width, void *,
+     int (* _Nonnull __compar)(void *, const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
 
-void qsort_b(void *, size_t, size_t,
-     int (^)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
+void qsort_b(void *__base, size_t __nel, size_t __width,
+     int (^ _Nonnull __compar)(const void *, const void *)) __attribute__((availability(macosx,introduced=10.6)));
 
-void qsort_r(void *, size_t, size_t, void *,
-     int (*)(void *, const void *, const void *));
-int radixsort(const unsigned char **, int, const unsigned char *,
-     unsigned);
+void qsort_r(void *__base, size_t __nel, size_t __width, void *,
+     int (* _Nonnull __compar)(void *, const void *, const void *));
+int radixsort(const unsigned char **__base, int __nel, const unsigned char *__table,
+     unsigned __endbyte);
 void setprogname(const char *);
-int sradixsort(const unsigned char **, int, const unsigned char *,
-     unsigned);
+int sradixsort(const unsigned char **__base, int __nel, const unsigned char *__table,
+     unsigned __endbyte);
 void sranddev(void);
 void srandomdev(void);
-void *reallocf(void *, size_t);
+void *reallocf(void *__ptr, size_t __size);
 
 long long
-  strtoq(const char *, char **, int);
+  strtoq(const char *__str, char **__endptr, int __base);
 unsigned long long
-  strtouq(const char *, char **, int);
+  strtouq(const char *__str, char **__endptr, int __base);
 
 extern char *suboptarg;
 void *valloc(size_t);
 # 5 "./util.c" 2
-# 1 "/usr/local/include/lua.h" 1 3
-# 13 "/usr/local/include/lua.h" 3
+# 1 "/usr/local/include/lua.h" 1
+# 13 "/usr/local/include/lua.h"
 # 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stddef.h" 1 3 4
 # 51 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stddef.h" 3 4
 typedef long int ptrdiff_t;
@@ -1629,37 +1662,37 @@ typedef long unsigned int rsize_t;
 # 32 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/__stddef_max_align_t.h" 3 4
 typedef long double max_align_t;
 # 119 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stddef.h" 2 3 4
-# 14 "/usr/local/include/lua.h" 2 3
+# 14 "/usr/local/include/lua.h" 2
 
 
-# 1 "/usr/local/include/luaconf.h" 1 3
-# 11 "/usr/local/include/luaconf.h" 3
+# 1 "/usr/local/include/luaconf.h" 1
+# 11 "/usr/local/include/luaconf.h"
 # 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/limits.h" 1 3 4
 # 37 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/limits.h" 3 4
-# 1 "/usr/include/limits.h" 1 3 4
-# 64 "/usr/include/limits.h" 3 4
-# 1 "/usr/include/machine/limits.h" 1 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/limits.h" 1 3 4
+# 64 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/limits.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/limits.h" 1 3 4
 
 
 
 
 
-# 1 "/usr/include/i386/limits.h" 1 3 4
-# 40 "/usr/include/i386/limits.h" 3 4
-# 1 "/usr/include/i386/_limits.h" 1 3 4
-# 41 "/usr/include/i386/limits.h" 2 3 4
-# 7 "/usr/include/machine/limits.h" 2 3 4
-# 65 "/usr/include/limits.h" 2 3 4
-# 1 "/usr/include/sys/syslimits.h" 1 3 4
-# 66 "/usr/include/limits.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/limits.h" 1 3 4
+# 40 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/limits.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/_limits.h" 1 3 4
+# 41 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/i386/limits.h" 2 3 4
+# 7 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/machine/limits.h" 2 3 4
+# 65 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/limits.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/syslimits.h" 1 3 4
+# 66 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/limits.h" 2 3 4
 # 38 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/limits.h" 2 3 4
-# 12 "/usr/local/include/luaconf.h" 2 3
+# 12 "/usr/local/include/luaconf.h" 2
 # 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stddef.h" 1 3 4
-# 13 "/usr/local/include/luaconf.h" 2 3
-# 17 "/usr/local/include/lua.h" 2 3
-# 54 "/usr/local/include/lua.h" 3
+# 13 "/usr/local/include/luaconf.h" 2
+# 17 "/usr/local/include/lua.h" 2
+# 54 "/usr/local/include/lua.h"
 typedef struct lua_State lua_State;
-# 87 "/usr/local/include/lua.h" 3
+# 87 "/usr/local/include/lua.h"
 typedef double lua_Number;
 
 
@@ -1696,7 +1729,7 @@ typedef int (*lua_Writer) (lua_State *L, const void *p, size_t sz, void *ud);
 
 
 typedef void * (*lua_Alloc) (void *ud, void *ptr, size_t osize, size_t nsize);
-# 137 "/usr/local/include/lua.h" 3
+# 137 "/usr/local/include/lua.h"
 extern const char lua_ident[];
 
 
@@ -1748,7 +1781,7 @@ extern lua_CFunction (lua_tocfunction) (lua_State *L, int idx);
 extern void *(lua_touserdata) (lua_State *L, int idx);
 extern lua_State *(lua_tothread) (lua_State *L, int idx);
 extern const void *(lua_topointer) (lua_State *L, int idx);
-# 209 "/usr/local/include/lua.h" 3
+# 209 "/usr/local/include/lua.h"
 extern void (lua_arith) (lua_State *L, int op);
 
 
@@ -1832,7 +1865,7 @@ extern int (lua_yieldk) (lua_State *L, int nresults, lua_KContext ctx,
 extern int (lua_resume) (lua_State *L, lua_State *from, int narg);
 extern int (lua_status) (lua_State *L);
 extern int (lua_isyieldable) (lua_State *L);
-# 310 "/usr/local/include/lua.h" 3
+# 310 "/usr/local/include/lua.h"
 extern int (lua_gc) (lua_State *L, int what, int data);
 
 
@@ -1851,7 +1884,7 @@ extern size_t (lua_stringtonumber) (lua_State *L, const char *s);
 
 extern lua_Alloc (lua_getallocf) (lua_State *L, void **ud);
 extern void (lua_setallocf) (lua_State *L, lua_Alloc f, void *ud);
-# 416 "/usr/local/include/lua.h" 3
+# 416 "/usr/local/include/lua.h"
 typedef struct lua_Debug lua_Debug;
 
 
@@ -1894,11 +1927,11 @@ struct lua_Debug {
   struct CallInfo *i_ci;
 };
 # 6 "./util.c" 2
-# 1 "/usr/local/include/lauxlib.h" 1 3
-# 12 "/usr/local/include/lauxlib.h" 3
+# 1 "/usr/local/include/lauxlib.h" 1
+# 12 "/usr/local/include/lauxlib.h"
 # 1 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include/stddef.h" 1 3 4
-# 13 "/usr/local/include/lauxlib.h" 2 3
-# 23 "/usr/local/include/lauxlib.h" 3
+# 13 "/usr/local/include/lauxlib.h" 2
+# 23 "/usr/local/include/lauxlib.h"
 typedef struct luaL_Reg {
   const char *name;
   lua_CFunction func;
@@ -1976,7 +2009,7 @@ extern void (luaL_traceback) (lua_State *L, lua_State *L1,
 
 extern void (luaL_requiref) (lua_State *L, const char *modname,
                                  lua_CFunction openf, int glb);
-# 140 "/usr/local/include/lauxlib.h" 3
+# 140 "/usr/local/include/lauxlib.h"
 typedef struct luaL_Buffer {
   char *b;
   size_t size;
@@ -1984,7 +2017,7 @@ typedef struct luaL_Buffer {
   lua_State *L;
   char initb[((int)(0x80 * sizeof(void*) * sizeof(lua_Integer)))];
 } luaL_Buffer;
-# 155 "/usr/local/include/lauxlib.h" 3
+# 155 "/usr/local/include/lauxlib.h"
 extern void (luaL_buffinit) (lua_State *L, luaL_Buffer *B);
 extern char *(luaL_prepbuffsize) (luaL_Buffer *B, size_t sz);
 extern void (luaL_addlstring) (luaL_Buffer *B, const char *s, size_t l);
@@ -1993,14 +2026,14 @@ extern void (luaL_addvalue) (luaL_Buffer *B);
 extern void (luaL_pushresult) (luaL_Buffer *B);
 extern void (luaL_pushresultsize) (luaL_Buffer *B, size_t sz);
 extern char *(luaL_buffinitsize) (lua_State *L, luaL_Buffer *B, size_t sz);
-# 185 "/usr/local/include/lauxlib.h" 3
+# 185 "/usr/local/include/lauxlib.h"
 typedef struct luaL_Stream {
   FILE *f;
   lua_CFunction closef;
 } luaL_Stream;
 # 7 "./util.c" 2
-# 1 "/usr/local/include/lualib.h" 1 3
-# 15 "/usr/local/include/lualib.h" 3
+# 1 "/usr/local/include/lualib.h" 1
+# 15 "/usr/local/include/lualib.h"
 extern int (luaopen_base) (lua_State *L);
 
 
@@ -2037,42 +2070,42 @@ extern int (luaopen_package) (lua_State *L);
 
 extern void (luaL_openlibs) (lua_State *L);
 # 8 "./util.c" 2
-# 1 "/usr/include/string.h" 1 3 4
-# 70 "/usr/include/string.h" 3 4
-void *memchr(const void *, int, size_t);
-int memcmp(const void *, const void *, size_t);
-void *memcpy(void *, const void *, size_t);
-void *memmove(void *, const void *, size_t);
-void *memset(void *, int, size_t);
-char *strcat(char *, const char *);
-char *strchr(const char *, int);
-int strcmp(const char *, const char *);
-int strcoll(const char *, const char *);
-char *strcpy(char *, const char *);
-size_t strcspn(const char *, const char *);
-char *strerror(int) __asm("_" "strerror" );
-size_t strlen(const char *);
-char *strncat(char *, const char *, size_t);
-int strncmp(const char *, const char *, size_t);
-char *strncpy(char *, const char *, size_t);
-char *strpbrk(const char *, const char *);
-char *strrchr(const char *, int);
-size_t strspn(const char *, const char *);
-char *strstr(const char *, const char *);
-char *strtok(char *, const char *);
-size_t strxfrm(char *, const char *, size_t);
-# 104 "/usr/include/string.h" 3 4
-char *strtok_r(char *, const char *, char **);
-# 116 "/usr/include/string.h" 3 4
-int strerror_r(int, char *, size_t);
-char *strdup(const char *);
-void *memccpy(void *, const void *, int, size_t);
-# 130 "/usr/include/string.h" 3 4
-char *stpcpy(char *, const char *);
-char *stpncpy(char *, const char *, size_t) __attribute__((availability(macosx,introduced=10.7)));
-char *strndup(const char *, size_t) __attribute__((availability(macosx,introduced=10.7)));
-size_t strnlen(const char *, size_t) __attribute__((availability(macosx,introduced=10.7)));
-char *strsignal(int sig);
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h" 1 3 4
+# 70 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h" 3 4
+void *memchr(const void *__s, int __c, size_t __n);
+int memcmp(const void *__s1, const void *__s2, size_t __n);
+void *memcpy(void *__dst, const void *__src, size_t __n);
+void *memmove(void *__dst, const void *__src, size_t __len);
+void *memset(void *__b, int __c, size_t __len);
+char *strcat(char *__s1, const char *__s2);
+char *strchr(const char *__s, int __c);
+int strcmp(const char *__s1, const char *__s2);
+int strcoll(const char *__s1, const char *__s2);
+char *strcpy(char *__dst, const char *__src);
+size_t strcspn(const char *__s, const char *__charset);
+char *strerror(int __errnum) __asm("_" "strerror" );
+size_t strlen(const char *__s);
+char *strncat(char *__s1, const char *__s2, size_t __n);
+int strncmp(const char *__s1, const char *__s2, size_t __n);
+char *strncpy(char *__dst, const char *__src, size_t __n);
+char *strpbrk(const char *__s, const char *__charset);
+char *strrchr(const char *__s, int __c);
+size_t strspn(const char *__s, const char *__charset);
+char *strstr(const char *__big, const char *__little);
+char *strtok(char *__str, const char *__sep);
+size_t strxfrm(char *__s1, const char *__s2, size_t __n);
+# 104 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h" 3 4
+char *strtok_r(char *__str, const char *__sep, char **__lasts);
+# 116 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h" 3 4
+int strerror_r(int __errnum, char *__strerrbuf, size_t __buflen);
+char *strdup(const char *__s1);
+void *memccpy(void *__dst, const void *__src, int __c, size_t __n);
+# 130 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h" 3 4
+char *stpcpy(char *__dst, const char *__src);
+char *stpncpy(char *__dst, const char *__src, size_t __n) __attribute__((availability(macosx,introduced=10.7)));
+char *strndup(const char *__s1, size_t __n) __attribute__((availability(macosx,introduced=10.7)));
+size_t strnlen(const char *__s1, size_t __n) __attribute__((availability(macosx,introduced=10.7)));
+char *strsignal(int __sig);
 
 
 
@@ -2080,40 +2113,46 @@ char *strsignal(int sig);
 
 
 
-# 1 "/usr/include/sys/_types/_rsize_t.h" 1 3 4
-# 142 "/usr/include/string.h" 2 3 4
-# 1 "/usr/include/sys/_types/_errno_t.h" 1 3 4
-# 30 "/usr/include/sys/_types/_errno_t.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_rsize_t.h" 1 3 4
+# 142 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_errno_t.h" 1 3 4
+# 30 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/sys/_types/_errno_t.h" 3 4
 typedef int errno_t;
-# 143 "/usr/include/string.h" 2 3 4
+# 143 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h" 2 3 4
 
 
-errno_t memset_s(void *, rsize_t, int, rsize_t) __attribute__((availability(macosx,introduced=10.9)));
-# 155 "/usr/include/string.h" 3 4
-void *memmem(const void *, size_t, const void *, size_t) __attribute__((availability(macosx,introduced=10.7)));
-void memset_pattern4(void *, const void *, size_t) __attribute__((availability(macosx,introduced=10.5)));
-void memset_pattern8(void *, const void *, size_t) __attribute__((availability(macosx,introduced=10.5)));
-void memset_pattern16(void *, const void *, size_t) __attribute__((availability(macosx,introduced=10.5)));
+errno_t memset_s(void *__s, rsize_t __smax, int __c, rsize_t __n) __attribute__((availability(macosx,introduced=10.9)));
+# 155 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h" 3 4
+void *memmem(const void *__big, size_t __big_len, const void *__little, size_t __little_len) __attribute__((availability(macosx,introduced=10.7)));
+void memset_pattern4(void *__b, const void *__pattern4, size_t __len) __attribute__((availability(macosx,introduced=10.5)));
+void memset_pattern8(void *__b, const void *__pattern8, size_t __len) __attribute__((availability(macosx,introduced=10.5)));
+void memset_pattern16(void *__b, const void *__pattern16, size_t __len) __attribute__((availability(macosx,introduced=10.5)));
 
-char *strcasestr(const char *, const char *);
-char *strnstr(const char *, const char *, size_t);
-size_t strlcat(char *, const char *, size_t);
-size_t strlcpy(char *, const char *, size_t);
-void strmode(int, char *);
-char *strsep(char **, const char *);
+char *strcasestr(const char *__big, const char *__little);
+char *strnstr(const char *__big, const char *__little, size_t __len);
+size_t strlcat(char *__dst, const char *__source, size_t __size);
+size_t strlcpy(char *__dst, const char *__source, size_t __size);
+void strmode(int __mode, char *__bp);
+char *strsep(char **__stringp, const char *__delim);
 
 
 void swab(const void * restrict, void * restrict, ssize_t);
 
 
+__attribute__((availability(macosx,introduced=10.12.1))) __attribute__((availability(ios,introduced=10.1)))
+__attribute__((availability(tvos,introduced=10.0.1))) __attribute__((availability(watchos,introduced=3.1)))
+
+int timingsafe_bcmp(const void *__b1, const void *__b2, size_t __len);
 
 
 
 
 
 
-# 1 "/usr/include/strings.h" 1 3 4
-# 70 "/usr/include/strings.h" 3 4
+
+
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/strings.h" 1 3 4
+# 70 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/strings.h" 3 4
 int bcmp(const void *, const void *, size_t) ;
 void bcopy(const void *, void *, size_t) ;
 void bzero(void *, size_t) ;
@@ -2137,12 +2176,12 @@ int flsll(long long) __attribute__((availability(macosx,introduced=10.9)));
 
 
 
-# 1 "/usr/include/string.h" 1 3 4
-# 93 "/usr/include/strings.h" 2 3 4
-# 177 "/usr/include/string.h" 2 3 4
-# 186 "/usr/include/string.h" 3 4
-# 1 "/usr/include/secure/_string.h" 1 3 4
-# 187 "/usr/include/string.h" 2 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h" 1 3 4
+# 93 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/strings.h" 2 3 4
+# 183 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h" 2 3 4
+# 192 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h" 3 4
+# 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/secure/_string.h" 1 3 4
+# 193 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h" 2 3 4
 # 9 "./util.c" 2
 
 
@@ -2336,18 +2375,44 @@ static int getsize(lua_State *L){
  lua_pushinteger(L,a->size);
  return 1;
 }
+static const struct luaL_Reg arraylib_f [] = {
+    {"new", newarray},
+    {((void*)0), ((void*)0)}
+};
+static const struct luaL_Reg arraylib_m [] = {
+    {"set",setarray},
+    {"get", getarray},
+    {"size", getsize},
+    {((void*)0), ((void*)0)}
+};
+int luaopen_array (lua_State *L) {
+    luaL_newmetatable(L, "LuaBook.array");
+    lua_pushvalue(L, -1);
+    lua_setfield(L, -2, "__index");
+    luaL_setfuncs(L, arraylib_m, 0);
+    (luaL_checkversion_(L, 503, (sizeof(lua_Integer)*16 + sizeof(lua_Number))), lua_createtable(L, 0, sizeof(arraylib_f)/sizeof((arraylib_f)[0]) - 1), luaL_setfuncs(L,arraylib_f,0));
+    return 1;
+}
 
+static const luaL_Reg lualibs[] =
+{
+    {"array", luaopen_array},
+    {((void*)0), ((void*)0)}
+};
 int main(){
  printf(" BITS_PER_WORD = %ld sizeof(unsigned int) = %ld \n",(8*sizeof(unsigned int)),sizeof(unsigned int));
  lua_State *L = luaL_newstate();
  luaL_openlibs(L);
- luaL_newmetatable(L,"LuaBook.array");
- lua_pushvalue(L,-1);
- lua_setfield(L,-2,"--index");
- (lua_pushcclosure(L, ((newarray)), 0), lua_setglobal(L, ("newarray")));
- (lua_pushcclosure(L, ((setarray)), 0), lua_setglobal(L, ("setarray")));
- (lua_pushcclosure(L, ((getarray)), 0), lua_setglobal(L, ("getarray")));
- (lua_pushcclosure(L, ((getsize)), 0), lua_setglobal(L, ("getsize")));
+
+
+ const luaL_Reg *lib = lualibs;
+ for(; lib->func != ((void*)0); lib++)
+ {
+
+     luaL_requiref(L, lib->name, lib->func, 1);
+     lua_settop(L, 0);
+ }
+# 123 "test2801.c"
  loadfile(L,"test2801.lua");
  return 0;
 }

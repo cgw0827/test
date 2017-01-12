@@ -75,19 +75,52 @@ static int getsize(lua_State *L){
 	lua_pushinteger(L,a->size);
 	return 1;
 }
+static const struct luaL_Reg arraylib_f [] = {
+    {"new", newarray},
+    {NULL, NULL}
+};
+static const struct luaL_Reg arraylib_m [] = {
+    {"set",setarray},
+    {"get", getarray},
+    {"size", getsize},
+    {"__gc", auto_gc},
+    {NULL, NULL}
+};
+int luaopen_array (lua_State *L) {
+    luaL_newmetatable(L, "LuaBook.array");
+    lua_pushvalue(L, -1);
+    lua_setfield(L, -2, "__index");
+    luaL_setfuncs(L, arraylib_m, 0);	
+    luaL_newlib(L, arraylib_f);
+    return 1;
+}
 
+static const luaL_Reg lualibs[] =
+{
+    {"array", luaopen_array},
+    {NULL, NULL}
+};
 int main(){
 	printf(" BITS_PER_WORD = %ld sizeof(unsigned int) = %ld \n",BITS_PER_WORD,sizeof(unsigned int));
 	lua_State *L = luaL_newstate();
 	luaL_openlibs(L);
-	luaL_newmetatable(L,"LuaBook.array");
-	lua_pushvalue(L,-1);
-	lua_setfield(L,-2,"--index");
+	// luaL_newmetatable(L,"LuaBook.array");
+
+	const luaL_Reg *lib = lualibs;
+	for(; lib->func != NULL; lib++)
+	{
+	    //注意这里如果使用的不是requiref，则需要手动在Lua里面调用require "模块名"
+	    luaL_requiref(L, lib->name, lib->func, 1);
+	    lua_settop(L, 0);
+	}
+
+	// lua_pushvalue(L,-1);
+	// lua_setfield(L,-2,"--index");
 	
-	lua_register(L,"newarray",newarray);
-	lua_register(L,"setarray",setarray);
-	lua_register(L,"getarray",getarray);
-	lua_register(L,"getsize",getsize);
+	// lua_register(L,"newarray",newarray);
+	// lua_register(L,"setarray",setarray);
+	// lua_register(L,"getarray",getarray);
+	// lua_register(L,"getsize",getsize);
 	loadfile(L,"test2801.lua");
 	return 0;
 }
